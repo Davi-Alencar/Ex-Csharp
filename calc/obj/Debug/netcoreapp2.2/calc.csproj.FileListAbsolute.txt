@@ -1,0 +1,11 @@
+C:\Users\45626490892\Documents\Ex\calc\bin\Debug\netcoreapp2.2\calc.deps.json
+C:\Users\45626490892\Documents\Ex\calc\bin\Debug\netcoreapp2.2\calc.runtimeconfig.json
+C:\Users\45626490892\Documents\Ex\calc\bin\Debug\netcoreapp2.2\calc.runtimeconfig.dev.json
+C:\Users\45626490892\Documents\Ex\calc\bin\Debug\netcoreapp2.2\calc.dll
+C:\Users\45626490892\Documents\Ex\calc\bin\Debug\netcoreapp2.2\calc.pdb
+C:\Users\45626490892\Documents\Ex\calc\obj\Debug\netcoreapp2.2\calc.csprojAssemblyReference.cache
+C:\Users\45626490892\Documents\Ex\calc\obj\Debug\netcoreapp2.2\calc.csproj.CoreCompileInputs.cache
+C:\Users\45626490892\Documents\Ex\calc\obj\Debug\netcoreapp2.2\calc.AssemblyInfoInputs.cache
+C:\Users\45626490892\Documents\Ex\calc\obj\Debug\netcoreapp2.2\calc.AssemblyInfo.cs
+C:\Users\45626490892\Documents\Ex\calc\obj\Debug\netcoreapp2.2\calc.dll
+C:\Users\45626490892\Documents\Ex\calc\obj\Debug\netcoreapp2.2\calc.pdb

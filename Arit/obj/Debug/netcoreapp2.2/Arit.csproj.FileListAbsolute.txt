@@ -1,0 +1,11 @@
+C:\Users\45626490892\Documents\Ex\Arit\bin\Debug\netcoreapp2.2\Arit.deps.json
+C:\Users\45626490892\Documents\Ex\Arit\bin\Debug\netcoreapp2.2\Arit.runtimeconfig.json
+C:\Users\45626490892\Documents\Ex\Arit\bin\Debug\netcoreapp2.2\Arit.runtimeconfig.dev.json
+C:\Users\45626490892\Documents\Ex\Arit\bin\Debug\netcoreapp2.2\Arit.dll
+C:\Users\45626490892\Documents\Ex\Arit\bin\Debug\netcoreapp2.2\Arit.pdb
+C:\Users\45626490892\Documents\Ex\Arit\obj\Debug\netcoreapp2.2\Arit.csprojAssemblyReference.cache
+C:\Users\45626490892\Documents\Ex\Arit\obj\Debug\netcoreapp2.2\Arit.csproj.CoreCompileInputs.cache
+C:\Users\45626490892\Documents\Ex\Arit\obj\Debug\netcoreapp2.2\Arit.AssemblyInfoInputs.cache
+C:\Users\45626490892\Documents\Ex\Arit\obj\Debug\netcoreapp2.2\Arit.AssemblyInfo.cs
+C:\Users\45626490892\Documents\Ex\Arit\obj\Debug\netcoreapp2.2\Arit.dll
+C:\Users\45626490892\Documents\Ex\Arit\obj\Debug\netcoreapp2.2\Arit.pdb

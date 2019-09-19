@@ -1,0 +1,4 @@
+C:\Users\45626490892\Documents\Ex\Hell-o\obj\Debug\netcoreapp2.2\Hell-o.csprojAssemblyReference.cache
+C:\Users\45626490892\Documents\Ex\Hell-o\obj\Debug\netcoreapp2.2\Hell-o.csproj.CoreCompileInputs.cache
+C:\Users\45626490892\Documents\Ex\Hell-o\obj\Debug\netcoreapp2.2\Hell-o.AssemblyInfoInputs.cache
+C:\Users\45626490892\Documents\Ex\Hell-o\obj\Debug\netcoreapp2.2\Hell-o.AssemblyInfo.cs
