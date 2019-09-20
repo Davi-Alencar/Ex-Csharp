@@ -12,18 +12,19 @@ namespace money
             double Aumento = 0;
 
             Console.WriteLine("Digite o valor de seu salário:");
-            Salario = int.Parse(Console.ReadLine());    
+            Salario = double.Parse(Console.ReadLine());    
 
-            Aumento = Salario / 30;
+            Aumento = Salario * 0.3;
 
             if (Salario < Minimo) { 
-                Console.WriteLine($"{Salario} + {Aumento}  = {Salario + Aumento}");
+                Console.WriteLine($"Eis o valor de vosso benefício: {Aumento}");
+                Console.WriteLine($"O valor somado de seu novo salário agora é: {Salario} +  {Aumento}  = {Salario + Aumento}");
             }
 
 
 
             else {
-                Console.WriteLine("Sem direito ao benefício!");
+                Console.WriteLine("Sem direito ao benefício, amigo!");
             }
         }
     }
