@@ -1,0 +1,11 @@
+C:\Users\45626490892\Documents\Ex\numZ\obj\Debug\netcoreapp2.2\numZ.csprojAssemblyReference.cache
+C:\Users\45626490892\Documents\Ex\numZ\obj\Debug\netcoreapp2.2\numZ.csproj.CoreCompileInputs.cache
+C:\Users\45626490892\Documents\Ex\numZ\obj\Debug\netcoreapp2.2\numZ.AssemblyInfoInputs.cache
+C:\Users\45626490892\Documents\Ex\numZ\obj\Debug\netcoreapp2.2\numZ.AssemblyInfo.cs
+C:\Users\45626490892\Documents\Ex\numZ\bin\Debug\netcoreapp2.2\numZ.deps.json
+C:\Users\45626490892\Documents\Ex\numZ\bin\Debug\netcoreapp2.2\numZ.runtimeconfig.json
+C:\Users\45626490892\Documents\Ex\numZ\bin\Debug\netcoreapp2.2\numZ.runtimeconfig.dev.json
+C:\Users\45626490892\Documents\Ex\numZ\bin\Debug\netcoreapp2.2\numZ.dll
+C:\Users\45626490892\Documents\Ex\numZ\bin\Debug\netcoreapp2.2\numZ.pdb
+C:\Users\45626490892\Documents\Ex\numZ\obj\Debug\netcoreapp2.2\numZ.dll
+C:\Users\45626490892\Documents\Ex\numZ\obj\Debug\netcoreapp2.2\numZ.pdb
