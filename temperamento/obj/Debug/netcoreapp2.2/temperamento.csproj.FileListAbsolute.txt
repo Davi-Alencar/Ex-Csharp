@@ -1,0 +1,11 @@
+C:\Users\45626490892\Documents\Ex\temperamento\obj\Debug\netcoreapp2.2\temperamento.csprojAssemblyReference.cache
+C:\Users\45626490892\Documents\Ex\temperamento\obj\Debug\netcoreapp2.2\temperamento.csproj.CoreCompileInputs.cache
+C:\Users\45626490892\Documents\Ex\temperamento\obj\Debug\netcoreapp2.2\temperamento.AssemblyInfoInputs.cache
+C:\Users\45626490892\Documents\Ex\temperamento\obj\Debug\netcoreapp2.2\temperamento.AssemblyInfo.cs
+C:\Users\45626490892\Documents\Ex\temperamento\bin\Debug\netcoreapp2.2\temperamento.deps.json
+C:\Users\45626490892\Documents\Ex\temperamento\bin\Debug\netcoreapp2.2\temperamento.runtimeconfig.json
+C:\Users\45626490892\Documents\Ex\temperamento\bin\Debug\netcoreapp2.2\temperamento.runtimeconfig.dev.json
+C:\Users\45626490892\Documents\Ex\temperamento\bin\Debug\netcoreapp2.2\temperamento.dll
+C:\Users\45626490892\Documents\Ex\temperamento\bin\Debug\netcoreapp2.2\temperamento.pdb
+C:\Users\45626490892\Documents\Ex\temperamento\obj\Debug\netcoreapp2.2\temperamento.dll
+C:\Users\45626490892\Documents\Ex\temperamento\obj\Debug\netcoreapp2.2\temperamento.pdb

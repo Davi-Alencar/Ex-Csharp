@@ -1,0 +1,11 @@
+C:\Users\45626490892\Documents\Ex\loginmim\bin\Debug\netcoreapp2.2\loginmim.deps.json
+C:\Users\45626490892\Documents\Ex\loginmim\bin\Debug\netcoreapp2.2\loginmim.runtimeconfig.json
+C:\Users\45626490892\Documents\Ex\loginmim\bin\Debug\netcoreapp2.2\loginmim.runtimeconfig.dev.json
+C:\Users\45626490892\Documents\Ex\loginmim\bin\Debug\netcoreapp2.2\loginmim.dll
+C:\Users\45626490892\Documents\Ex\loginmim\bin\Debug\netcoreapp2.2\loginmim.pdb
+C:\Users\45626490892\Documents\Ex\loginmim\obj\Debug\netcoreapp2.2\loginmim.csprojAssemblyReference.cache
+C:\Users\45626490892\Documents\Ex\loginmim\obj\Debug\netcoreapp2.2\loginmim.csproj.CoreCompileInputs.cache
+C:\Users\45626490892\Documents\Ex\loginmim\obj\Debug\netcoreapp2.2\loginmim.AssemblyInfoInputs.cache
+C:\Users\45626490892\Documents\Ex\loginmim\obj\Debug\netcoreapp2.2\loginmim.AssemblyInfo.cs
+C:\Users\45626490892\Documents\Ex\loginmim\obj\Debug\netcoreapp2.2\loginmim.dll
+C:\Users\45626490892\Documents\Ex\loginmim\obj\Debug\netcoreapp2.2\loginmim.pdb

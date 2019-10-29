@@ -1,0 +1,4 @@
+C:\Users\45626490892\Documents\Ex\polypocket\obj\Debug\netcoreapp2.2\polypocket.csprojAssemblyReference.cache
+C:\Users\45626490892\Documents\Ex\polypocket\obj\Debug\netcoreapp2.2\polypocket.csproj.CoreCompileInputs.cache
+C:\Users\45626490892\Documents\Ex\polypocket\obj\Debug\netcoreapp2.2\polypocket.AssemblyInfoInputs.cache
+C:\Users\45626490892\Documents\Ex\polypocket\obj\Debug\netcoreapp2.2\polypocket.AssemblyInfo.cs

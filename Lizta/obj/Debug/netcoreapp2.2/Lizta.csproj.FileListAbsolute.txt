@@ -1,0 +1,11 @@
+C:\Users\45626490892\Documents\Ex\Lizta\bin\Debug\netcoreapp2.2\Lizta.deps.json
+C:\Users\45626490892\Documents\Ex\Lizta\bin\Debug\netcoreapp2.2\Lizta.runtimeconfig.json
+C:\Users\45626490892\Documents\Ex\Lizta\bin\Debug\netcoreapp2.2\Lizta.runtimeconfig.dev.json
+C:\Users\45626490892\Documents\Ex\Lizta\bin\Debug\netcoreapp2.2\Lizta.dll
+C:\Users\45626490892\Documents\Ex\Lizta\bin\Debug\netcoreapp2.2\Lizta.pdb
+C:\Users\45626490892\Documents\Ex\Lizta\obj\Debug\netcoreapp2.2\Lizta.csprojAssemblyReference.cache
+C:\Users\45626490892\Documents\Ex\Lizta\obj\Debug\netcoreapp2.2\Lizta.csproj.CoreCompileInputs.cache
+C:\Users\45626490892\Documents\Ex\Lizta\obj\Debug\netcoreapp2.2\Lizta.AssemblyInfoInputs.cache
+C:\Users\45626490892\Documents\Ex\Lizta\obj\Debug\netcoreapp2.2\Lizta.AssemblyInfo.cs
+C:\Users\45626490892\Documents\Ex\Lizta\obj\Debug\netcoreapp2.2\Lizta.dll
+C:\Users\45626490892\Documents\Ex\Lizta\obj\Debug\netcoreapp2.2\Lizta.pdb

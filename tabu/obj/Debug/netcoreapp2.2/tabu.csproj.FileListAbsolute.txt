@@ -1,0 +1,11 @@
+C:\Users\45626490892\Documents\Ex\tabu\obj\Debug\netcoreapp2.2\tabu.csprojAssemblyReference.cache
+C:\Users\45626490892\Documents\Ex\tabu\obj\Debug\netcoreapp2.2\tabu.csproj.CoreCompileInputs.cache
+C:\Users\45626490892\Documents\Ex\tabu\obj\Debug\netcoreapp2.2\tabu.AssemblyInfoInputs.cache
+C:\Users\45626490892\Documents\Ex\tabu\obj\Debug\netcoreapp2.2\tabu.AssemblyInfo.cs
+C:\Users\45626490892\Documents\Ex\tabu\bin\Debug\netcoreapp2.2\tabu.deps.json
+C:\Users\45626490892\Documents\Ex\tabu\bin\Debug\netcoreapp2.2\tabu.runtimeconfig.json
+C:\Users\45626490892\Documents\Ex\tabu\bin\Debug\netcoreapp2.2\tabu.runtimeconfig.dev.json
+C:\Users\45626490892\Documents\Ex\tabu\bin\Debug\netcoreapp2.2\tabu.dll
+C:\Users\45626490892\Documents\Ex\tabu\bin\Debug\netcoreapp2.2\tabu.pdb
+C:\Users\45626490892\Documents\Ex\tabu\obj\Debug\netcoreapp2.2\tabu.dll
+C:\Users\45626490892\Documents\Ex\tabu\obj\Debug\netcoreapp2.2\tabu.pdb
