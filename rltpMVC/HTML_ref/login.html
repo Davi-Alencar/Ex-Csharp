@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang= "pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rolê-Top</title>
+    <link href="imgrltp/logo.png" rel="icon" type="image/x-icon"/>
+    <link href="login.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="dropdown">
+                <button class="dropbtn"> <img id="barranav" src="imgrltp/Captura de Tela (42) - Copia.png" alt="Barra de Navegação" title="Barra Nav"/> </button>
+                <div class="dropdown-content">
+                    
+                    <a href="rltp.html"> Principal </a>
+                    <a href="formulário.html"> Formulário </a>
+                    <a href="espaço.html"> Sobre o Espaço </a> 
+                    <a href="galeria.html"> Galeria </a> 
+                    <a href="login.html"> Login </a> 
+                    <a href="dúvidas.html"> Dúvidas </a>
+                    
+                </div>
+                
+                
+            </div>
+            
+            <img id="minilogo" src="imgrltp/logo - Copia.png" alt="Logotipo da Role-Top" title="logo"/>
+        </nav>
+    </header>
+
+    <main>
+
+            <form action="action_page">
+                    <div class="imgcontainer">
+                      <img src="imgrltp/bb-8-icon-7.jpg" alt="Avatar" class="avatar">
+                    </div>
+                  
+                    <div class="container">
+                      <label for="uname"><b>Nome de Usuário</b></label>
+                      <input type="text" placeholder="Usuário" name="usuario" required>
+                  
+                      <label for="psw"><b>Senha</b></label>
+                      <input type="password" placeholder="Sua senha" name="senha" required>
+                  
+                      <div id="bcon">
+                            <a href="usuario.html" class="confirmar">Login</a>
+                      </div>
+
+                      <div id="check">
+                      <label>
+                        <input type="checkbox" checked="checked" name="remember"> Pense em mim
+                      </label>
+                      
+                      <label>
+                        <input type="checkbox" name="logadm"> Login como <a href="adm.html">ADM</a>
+                      </label>
+                      </div>
+                    </div>
+                  
+                    <div class="containerc" style="background-color:#f1f1f1">
+                      <button type="button" class="cancelbtn">Cancelar</button>
+                      <span class="psw">Esqueçeu a <a href="#">senha?</a></span>
+                    </div>
+                  </form>
+
+    </main>
+
+</body>

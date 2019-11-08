@@ -1,0 +1,32 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <div class = "banner">
+        <h1 class="display-4">Well-come Matheus</h1>
+        <img src="img/matf2.jpg" class = "Matf">
+    </div>
+    <body>
+
+                <header>
+                    
+                    <nav>
+                        
+                        <ul>
+                            <li><em><strong>1. </strong> História <strong>2. </strong> Hobbies <strong>3. </strong> Feitos <strong>4. </strong> Planos</li></em>
+                        </ul>
+                        
+                    </nav>
+                    
+                </header>
+
+                  <footer>
+                    <em> Matheus Souza Silva, 17 Anos, -Estudante
+                        <br />
+                        São Paulo-SP
+                        <br />
+                        Porifólio </em>
+                </footer>
+                
+    </body>

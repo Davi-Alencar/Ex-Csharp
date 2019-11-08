@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Segoe UI', 'Open Sans'; 
+}
+
+/*********************************************
+                    NAV
+**********************************************/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(to bottom, black, #3B2CD1);
+    height: 4em;
+}
+
+
+.dropbtn {
+    background-image: linear-gradient(to bottom, black, #3B2CD1 );
+    color: white;
+    width: 10.3em;
+    height: 4em;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(77, 72, 72, 0.2);
+    z-index: 1;
+    
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+
+  #minilogo {
+    display: flex;
+    width: 6em;
+    height: 4.4em;
+  
+  }
+
+  #barranav {
+    width: 7em;
+    height: 2.6em;
+  }
+
+  /*********************************************
+                    for
+**********************************************/
+
+h2 h3{
+    color: black;
+    text-align: center;
+ }
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
+

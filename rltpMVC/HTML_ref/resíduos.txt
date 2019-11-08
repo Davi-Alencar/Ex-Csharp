@@ -1,0 +1,58 @@
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    font-size: 1em;
+    height: 2.5em;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: .65em 3em;
+}
+
+nav a:hover {
+    background-color: #2400a7;
+    color: #fff;
+    box-shadow: 0 2px #800000;
+}
+
+para margem
+text-indent: 50px;
+
+para espaçamento entre palavras
+h1 {
+  letter-spacing: 3px;
+}
+
+h2 {
+  letter-spacing: -3px;
+}
+
+para espaçamento entre as linhas
+p {
+  line-height: 0.7;
+}
+
+p {
+  line-height: 1.8;
+}
+
+para espaçamento entre letras 
+h1 {
+  word-spacing: 10px;
+}
+
+h2 {
+  word-spacing: -5px;
+}
+
+blush
+h1 {
+  text-shadow: 3px 2px red;
+}
