@@ -1,5 +1,6 @@
 using System;
 using McBonaldsMVC.Models;
+using McBonaldsMVC.Repositories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -12,6 +13,8 @@ namespace McBonaldsMVC.Controllers
             return View();
         }
 
+
+        ClienteRepositorio clienterepositorio = new ClienteRepositorio();
         public IActionResult CadastrarCliente(IFormCollection form)
         {
             try
@@ -24,7 +27,9 @@ namespace McBonaldsMVC.Controllers
                    form["senha"],
                    DateTime.Parse(form["data-nascimento"]
                    ));
-                return View("Sucesso");
+                    clienterepositorio.Inserir(cliente);
+
+                    return View("Sucesso");
                 
             }
             catch (Exception e)
