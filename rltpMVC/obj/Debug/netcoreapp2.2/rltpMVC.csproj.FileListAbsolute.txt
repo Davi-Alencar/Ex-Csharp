@@ -28,3 +28,4 @@ C:\Users\45626490892\Documents\Ex\rltpMVC\obj\Debug\netcoreapp2.2\rltpMVC.Views.
 C:\Users\45626490892\Documents\Ex\rltpMVC\obj\Debug\netcoreapp2.2\rltpMVC.dll
 C:\Users\45626490892\Documents\Ex\rltpMVC\obj\Debug\netcoreapp2.2\rltpMVC.pdb
 C:\Users\45626490892\Documents\Ex\rltpMVC\obj\Debug\netcoreapp2.2\rltpMVC.csproj.CopyComplete
+C:\Users\45626490892\Documents\Ex\rltpMVC\obj\Debug\netcoreapp2.2\Razor\Views\Galeria\Galeria.g.cshtml.cs
