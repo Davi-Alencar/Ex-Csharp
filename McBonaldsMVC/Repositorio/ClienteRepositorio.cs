@@ -1,9 +1,11 @@
 using System;
 using System.IO;
 using McBonaldsMVC.Models;
+using McBonaldsMVC.Repositorio;
+
 namespace McBonaldsMVC.Repositories
 {
-   public class ClienteRepositorio
+   public class ClienteRepositorio : RepositorioBase
    {
        private const string PATH = "Database/Cliente.csv";
        public ClienteRepositorio()
@@ -40,23 +42,6 @@ namespace McBonaldsMVC.Repositories
                }
            }
            return null;
-       }
-
-       private string ExtrairValorDoCAmpo(string nomeCampo, string linha)
-       {
-           var chave = nomeCampo;
-           var indiceChave = linha.IndexOf(chave);
-           var indiceTerminal = linha.IndexOf(";", indiceChave);
-           var valor = "";
-
-           if(indiceTerminal != -1)
-           {
-               valor = linha.Substring(indiceChave, indiceTerminal - indiceChave);
-           } else {
-               valor = linha.Substring(indiceChave);
-           }
-           System.Console.WriteLine($"Campo: {nomeCampo} e valor {valor}");
-           return valor.Replace(nomeCampo + "=","");
        }
 
        private string PrepararRegistroCSV(Cliente cliente)
