@@ -1,20 +1,7 @@
-using System.Collections.Generic;
-using McBonaldsMVC.Models;
-
 namespace McBonaldsMVC.Repositorio
 {
     public class RepositorioBase
     {
-
-       public List<Pedido> ObterTodosPorCliente(string emailCliente)
-       {
-           var pedidosCliente = ObterTodos();
-       }
-
-       public List<Pedido> ObterTodosPorCliente(string emailCliente)
-       {
-           var pedidosCliente = ObterTodos();
-       }
         protected string ExtrairValorDoCAmpo(string nomeCampo, string linha)
        {
            var chave = nomeCampo;
@@ -29,7 +16,7 @@ namespace McBonaldsMVC.Repositorio
                valor = linha.Substring(indiceChave);
            }
            System.Console.WriteLine($"Campo: {nomeCampo} e valor {valor}");
-           return valor.Replace(nomeCampo + "=","");
+           return valor.Replace(nomeCampo + "=", "");
        }
     }
 }

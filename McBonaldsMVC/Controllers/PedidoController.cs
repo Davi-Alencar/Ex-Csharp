@@ -8,16 +8,33 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace McBonaldsMVC.Controllers
 {
-    public class PedidoController : Controller
+    public class PedidoController : AbstractController
     {
+        PedidoViewModel pedidoViewModel = new PedidoViewModel();
+        ClienteRepositorio clienterepositorio = new ClienteRepositorio();
         PedidoRepositorio pedidorepositorio = new PedidoRepositorio();
         HamburguerRepositorio hamburguerrepositorio = new HamburguerRepositorio();
         ShakeRepositorio shakerepositorio = new ShakeRepositorio();
+
         public IActionResult Index()
         {
             PedidoViewModel pvm = new PedidoViewModel();
             pvm.Hamburgueres = hamburguerrepositorio.ObterTodos();
             pvm.Shakes = shakerepositorio.ObterTodos();
+            
+            Pedido pedido = new Pedido();
+            var emailCliente = ObterUsuarioNomeSession();
+            if(!string.IsNullOrEmpty(emailCliente))
+            {
+                pvm.Cliente = clienterepositorio.ObterPor(emailCliente);
+            }
+
+            var nomeUsuario = ObterUsuarioNomeSession();
+            if(!string.IsNullOrEmpty(nomeUsuario))
+            {
+                pvm.NomeCliente = nomeUsuario;
+            }
+
             return View(pvm);
         }
 
@@ -30,6 +47,7 @@ namespace McBonaldsMVC.Controllers
             Shake shake = new Shake (nomeShake, shakerepositorio.ObterPrecoDe(nomeShake));
 
             pedido.Shake = shake;
+
 
             var nomeHamburguer = form["hamburguer"];
             Hamburguer hamburguer = new Hamburguer (nomeHamburguer, hamburguerrepositorio.ObterPrecoDe(nomeHamburguer));

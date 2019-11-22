@@ -6,9 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace McBonaldsMVC.Controllers
 {
-    public class ClienteController : Controller
+    public class ClienteController : AbstractController
     {
-        private const string SESSION_CLIENTE_EMAIL = "email_cliente";
         private ClienteRepositorio clienteRepositorio = new ClienteRepositorio();
         private PedidoRepositorio pedidoRepositorio = new PedidoRepositorio();
 
@@ -22,6 +21,7 @@ namespace McBonaldsMVC.Controllers
         [HttpPost]
         public IActionResult Login(IFormCollection form)
         {
+            ViewData["Action"] = "Login";
             try
             {
                 System.Console.WriteLine("===================");
@@ -38,7 +38,8 @@ namespace McBonaldsMVC.Controllers
                 {
                     if(cliente.Senha.Equals(senha))
                     {
-                        HttpContext.Session.SetString("SESSION_CLIENTE_EMAIL", usuario);
+                        HttpContext.Session.SetString(SESSION_CLIENTE_EMAIL,usuario);
+                        HttpContext.Session.SetString(SESSION_CLIENTE_NOME,cliente.Nome);
                         return RedirectToAction("Historico","Cliente");
 
                     } else {
@@ -51,8 +52,8 @@ namespace McBonaldsMVC.Controllers
             catch (Exception e)
             {
                 System.Console.WriteLine(e.StackTrace);
+                return View("Erro", new RespostaViewModel("Usuário não encontrado"));
             }
-            return View();
         }
     
         public IActionResult Historico()
@@ -60,7 +61,7 @@ namespace McBonaldsMVC.Controllers
             var emailCliente = HttpContext.Session.GetString(SESSION_CLIENTE_EMAIL);
             var pedidosCliente = pedidoRepositorio.ObterTodosPorCliente(emailCliente);
 
-            return View(new HistoricoVIewModel()
+            return View(new HistoricoViewModel()
             {
                 Pedidos = pedidosCliente
             });

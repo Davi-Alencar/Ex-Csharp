@@ -61,7 +61,7 @@ namespace McBonaldsMVC.Repositories
                 
                 pedidos.Add(pedido);
             }
-            return pedidos
+            return pedidos;
         }
        private string PrepararPedidoCSV(Pedido pedido)
        {
@@ -72,7 +72,7 @@ namespace McBonaldsMVC.Repositories
            var Alfândega = 3.5; 
            pedido.PrecoTotal = (s.Preco + h.Preco) * Alfândega;
 
-           return $"cliente_nome={c.Nome}; cliente_endereco={c.Endereco}; cliente_telefone={c.Telefone}; cliente_email={c.Email}; hamburguer_nome={h.Nome}; hamburguer_preco={h.Preco}; shake_nome={s.Nome}; shake_preco={s.Preco}; data_pedido={pedido.DataDoPedido}; preco_total={pedido.PrecoTotal}";
+           return $"cliente_nome={c.Nome};cliente_endereco={c.Endereco};cliente_telefone={c.Telefone};cliente_email={c.Email};hamburguer_nome={h.Nome};hamburguer_preco={h.Preco};shake_nome={s.Nome};shake_preco={s.Preco};data_pedido={pedido.DataDoPedido};preco_total={pedido.PrecoTotal}";
        }
    }
 }

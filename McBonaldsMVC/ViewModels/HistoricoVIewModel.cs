@@ -3,7 +3,7 @@ using McBonaldsMVC.Models;
 
 namespace McBonaldsMVC.ViewModels
 {
-    public class HistoricoVIewModel
+    public class HistoricoViewModel
     {
         public List<Pedido> Pedidos {get; set;}
     }
