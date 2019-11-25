@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Rolê-Top</title>
     <link href="imgrltp/logo.png" rel="icon" type="image/x-icon"/>
-    @if("Home".Equals(nomeView))
+        @if("Home".Equals(nomeView))
         {
             <link href="~/css/rltp.css" rel="stylesheet" type="text/css">
         }
@@ -18,13 +18,14 @@
         {
             <link href="~/css/galeria.css" rel="stylesheet" type="text/css">
         }
+        
 </head>
 
 <body>
     <header>
         <nav>
             <div class="dropdown">
-                <button class="dropbtn"> <img id="barranav" src="imgrltp/Captura de Tela (42) - Copia.png" alt="Barra de Navegação" title="Barra Nav"/> </button>
+                <button class="dropbtn"> <img id="barranav" src="~/imgrltp/Captura de Tela (42) - Copia.png" alt="Barra de Navegação" title="Barra Nav"/> </button>
                 <div class="dropdown-content">
                     
                     <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Home" asp-action="Index" class="active"> Principal </a></li>
@@ -39,7 +40,7 @@
                 
             </div>
             
-            <img id="minilogo" src="imgrltp/logo - Copia.png" alt="Logotipo da Role-Top" title="logo"/>
+            <img id="minilogo" src="~/imgrltp/logo - Copia.png" alt="Logotipo da Role-Top" title="logo"/>
         </nav>
 
     </header>
@@ -59,7 +60,7 @@
                             <p>Feito com <3</p>
                         </div>
                         
-                        <img id="pe" src="imgrltp/Captura de Tela (43).png" alt="Role-Top" title="rltp"/>
+                        <img id="pe" src="~/imgrltp/Captura de Tela (43).png" alt="Role-Top" title="rltp"/>
                         
                     </section>
                 </div>

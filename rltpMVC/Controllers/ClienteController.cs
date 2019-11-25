@@ -1,11 +1,14 @@
 using System;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using rltpMVC.Repositorio;
 
 namespace rltpMVC.Controllers
 {
     public class ClienteController : Controller
     {
+        private ClienteRepositorio clienteRepositorio = new ClienteRepositorio();
+        
         [HttpGet]
     public IActionResult Login()
         {
@@ -25,7 +28,7 @@ namespace rltpMVC.Controllers
                 var usuario = form["email"];
                 var senha = form["senha"];
 
-                var cliente = clienteRepositorio.ObterPor(usuario);
+                
 
                 return View("Sucesso");
             }

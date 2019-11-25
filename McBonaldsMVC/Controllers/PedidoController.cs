@@ -21,19 +21,36 @@ namespace McBonaldsMVC.Controllers
             PedidoViewModel pvm = new PedidoViewModel();
             pvm.Hamburgueres = hamburguerrepositorio.ObterTodos();
             pvm.Shakes = shakerepositorio.ObterTodos();
+
+            var usuarioLogado = ObterUsuarioSession();
+            var nomeUsuarioLogado = ObterNomeSession();
+            if(!string.IsNullOrEmpty(nomeUsuarioLogado))
+            {
+                pvm.NomeCliente = nomeUsuarioLogado;
+            }
             
+            var clienteLogado = clienterepositorio.ObterPor(usuarioLogado);
+            if(clienteLogado != null)
+            {
+                pvm.Cliente = clienteLogado;
+            }
+
             Pedido pedido = new Pedido();
-            var emailCliente = ObterUsuarioNomeSession();
+            var emailCliente = ObterUsuarioSession();
             if(!string.IsNullOrEmpty(emailCliente))
             {
                 pvm.Cliente = clienterepositorio.ObterPor(emailCliente);
             }
 
-            var nomeUsuario = ObterUsuarioNomeSession();
+            var nomeUsuario = ObterNomeSession();
             if(!string.IsNullOrEmpty(nomeUsuario))
             {
                 pvm.NomeCliente = nomeUsuario;
             }
+
+            pvm.NomeView = "Pedido";
+            pvm.UsuarioEmail = ObterUsuarioSession();
+            pvm.UsuarioNome = ObterNomeSession();
 
             return View(pvm);
         }
