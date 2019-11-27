@@ -50,7 +50,7 @@ namespace McBonaldsMVC.Controllers
                         return RedirectToAction("Historico","Cliente");
 
                     } else {
-                        return View($"Erro", new RespostaViewModel("Senha Incorreta"));
+                        return View("Erro", new RespostaViewModel("Senha Incorreta"));
                     } 
                 } else {
                     return View("Erro", new RespostaViewModel($"Usuário {usuario} não encontrado"));
@@ -70,8 +70,20 @@ namespace McBonaldsMVC.Controllers
 
             return View(new HistoricoViewModel()
             {
-                Pedidos = pedidosCliente
+                Pedidos = pedidosCliente,
+                NomeView = "Historico",
+                UsuarioEmail =  ObterUsuarioSession(),
+                UsuarioNome =  ObterNomeSession()
             });
+        }
+
+        public IActionResult Logoff()
+        {
+            HttpContext.Session.Remove(SESSION_CLIENTE_EMAIL);
+            HttpContext.Session.Remove(SESSION_CLIENTE_NOME);
+            HttpContext.Session.Clear();
+
+            return RedirectToAction("Index", "Home");
         }
     }
 }

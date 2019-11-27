@@ -1,16 +1,22 @@
 using System;
 using McBonaldsMVC.Models;
 using McBonaldsMVC.Repositories;
+using McBonaldsMVC.ViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace McBonaldsMVC.Controllers
 {
-    public class CadastroController : Controller
+    public class CadastroController : AbstractController
     {
         public IActionResult Index()
         {
-            return View();
+            return View(new BaseViewModel()
+            {
+                NomeView = "Cadastro",
+                UsuarioEmail = ObterUsuarioSession(),
+                UsuarioNome = ObterNomeSession()
+            });
         }
 
 
@@ -29,13 +35,18 @@ namespace McBonaldsMVC.Controllers
                    ));
                     clienterepositorio.Inserir(cliente);
 
-                    return View("Sucesso");
+                    return View("Sucesso", new RespostaViewModel()
+                    {
+                        NomeView = "Cadastro",
+                        UsuarioEmail = ObterUsuarioSession(),
+                        UsuarioNome = ObterNomeSession()
+                    });
                 
             }
             catch (Exception e)
             {
                 System.Console.WriteLine(e.StackTrace);
-                return View("Erro");
+                return View("Erro", new RespostaViewModel("Mensagem"));
                 
             }
         }

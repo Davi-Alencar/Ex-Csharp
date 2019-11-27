@@ -17,7 +17,7 @@ namespace McBonaldsMVC.Controllers
             {
                 NomeView = "Home",
                 UsuarioEmail = ObterUsuarioSession(),
-                UsuarioNome = ObterNomeSession(),
+                UsuarioNome = ObterNomeSession()
             });
         }
 

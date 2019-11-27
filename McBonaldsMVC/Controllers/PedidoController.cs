@@ -85,9 +85,15 @@ namespace McBonaldsMVC.Controllers
 
             if(pedidorepositorio.Inserir(pedido))
             {
-                return View("Sucesso");
+                return View("Sucesso", new RespostaViewModel()
+            {
+                NomeView = "Pedido",
+                UsuarioEmail = ObterUsuarioSession(),
+                UsuarioNome = ObterNomeSession()
+            });
+
             } else {
-                return View ("Erro");
+                return View ("Erro", new RespostaViewModel("Mensagem"));
             }
         }
     }
