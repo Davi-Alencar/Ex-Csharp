@@ -27,9 +27,7 @@ namespace rltpMVC.Controllers
 
                 var usuario = form["email"];
                 var senha = form["senha"];
-
                 
-
                 return View("Sucesso");
             }
             catch (Exception e)

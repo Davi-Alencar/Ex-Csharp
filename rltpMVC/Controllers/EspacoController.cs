@@ -2,11 +2,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace rltpMVC.Controllers
 {
-    public class GaleriaController : Controller
+    public class EspacoController : Controller
     {
         public IActionResult Index()
         {
-            ViewData["NomeView"] = "Galeria";
+            ViewData["NomeView"] = "Espaco";
             ViewData["navView"] = "Nav";
             return View();
         }

@@ -13,6 +13,8 @@ namespace rltpMVC.Controllers
         public IActionResult Index()
         {
             ViewData["NomeView"] = "Home";
+            ViewData["navView"] = "Nav";
+            
             return View();
         }
 

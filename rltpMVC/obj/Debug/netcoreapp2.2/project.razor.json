@@ -2966,6 +2966,16 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\45626490892\\Documents\\Ex\\rltpMVC\\Views\\Shared\\_FooterHomePage.cshtml",
+      "TargetPath": "Views\\Shared\\_FooterHomePage.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\45626490892\\Documents\\Ex\\rltpMVC\\Views\\Espaco\\Index.cshtml",
+      "TargetPath": "Views\\Espaco\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\45626490892\\Documents\\Ex\\rltpMVC\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
@@ -2981,6 +2991,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\45626490892\\Documents\\Ex\\rltpMVC\\Views\\Shared\\_Nav.cshtml",
+      "TargetPath": "Views\\Shared\\_Nav.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\45626490892\\Documents\\Ex\\rltpMVC\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
@@ -2991,6 +3006,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\45626490892\\Documents\\Ex\\rltpMVC\\Views\\Galeria\\Index.cshtml",
+      "TargetPath": "Views\\Galeria\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\45626490892\\Documents\\Ex\\rltpMVC\\Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
@@ -2998,11 +3018,6 @@
     {
       "FilePath": "c:\\Users\\45626490892\\Documents\\Ex\\rltpMVC\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\45626490892\\Documents\\Ex\\rltpMVC\\Views\\Galeria\\Galeria.cshtml",
-      "TargetPath": "Views\\Galeria\\Galeria.cshtml",
       "FileKind": "mvc"
     },
     {

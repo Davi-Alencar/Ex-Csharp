@@ -1,0 +1,22 @@
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  
+  #faqd {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #s2 {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #pe {
+    display: flex;
+    justify-content: flex-end;
+    width: 10em;
+    height: 5em;
+  }
