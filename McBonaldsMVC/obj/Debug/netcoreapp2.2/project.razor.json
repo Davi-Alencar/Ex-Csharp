@@ -2966,6 +2966,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\45626490892\\Documents\\Ex\\McBonaldsMVC\\Views\\Administrador\\Dashboard.cshtml",
+      "TargetPath": "Views\\Administrador\\Dashboard.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\45626490892\\Documents\\Ex\\McBonaldsMVC\\Views\\Shared\\Sucesso.cshtml",
       "TargetPath": "Views\\Shared\\Sucesso.cshtml",
       "FileKind": "mvc"
