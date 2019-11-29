@@ -1,4 +1,5 @@
 using System;
+using McBonaldsMVC.Enums;
 using McBonaldsMVC.Models;
 using McBonaldsMVC.Repositories;
 using McBonaldsMVC.Repositorio;
@@ -94,6 +95,44 @@ namespace McBonaldsMVC.Controllers
 
             } else {
                 return View ("Erro", new RespostaViewModel("Mensagem"));
+            }
+
+        }
+        public IActionResult Aprovar(ulong id)
+        {
+            var pedido = pedidorepositorio.ObterPor(id);
+            pedido.Status = (uint) StatusPedido.APROVADO;
+
+            if(pedidorepositorio.Atualizar(pedido))
+            {
+                return RedirectToAction("Dashboard","Administrador");
+            }
+            else {
+                return View("Erro", new RespostaViewModel("Não foi possível aprovar este pedido")
+                {
+                    NomeView = "Dashboard",
+                    UsuarioEmail = ObterUsuarioSession(),
+                    UsuarioNome = ObterNomeSession()
+                });
+            }
+        }
+
+        public IActionResult Reprovar(ulong id)
+        {
+            var pedido = pedidorepositorio.ObterPor(id);
+            pedido.Status = (uint) StatusPedido.REPROVADO;
+
+            if(pedidorepositorio.Atualizar(pedido))
+            {
+                return RedirectToAction("Dashboard","Administrador");
+            }
+            else {
+                return View("Erro", new RespostaViewModel("Não foi possível reprovar este pedido")
+                {
+                    NomeView = "Dashboard",
+                    UsuarioEmail = ObterUsuarioSession(),
+                    UsuarioNome = ObterNomeSession()
+                });
             }
         }
     }
