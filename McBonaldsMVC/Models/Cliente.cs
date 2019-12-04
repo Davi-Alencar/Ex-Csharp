@@ -14,7 +14,6 @@ namespace McBonaldsMVC.Models
 
         public Cliente()
         {
-            
         }
 
         public Cliente(string nome, string endereco, string telefone, string email, string senha, DateTime dataNascimento)

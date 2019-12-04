@@ -3,7 +3,7 @@ using rltpMVC.Models;
 
 namespace rltpMVC.ViewModels
 {
-    public class HistoricoViewModel
+    public class HistoricoViewModel : BaseViewModel
     {
         public List<Agendamento> Agendamentos {get;set;}
     }

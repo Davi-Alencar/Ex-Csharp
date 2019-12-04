@@ -8,7 +8,7 @@ using rltpMVC.Models;
 
 namespace rltpMVC.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : AbstractController
     {
         public IActionResult Index()
         {

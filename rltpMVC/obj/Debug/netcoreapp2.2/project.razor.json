@@ -2961,11 +2961,6 @@
   "RootNamespace": "rltpMVC",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\45626490892\\Documents\\Ex\\rltpMVC\\Views\\Login\\Login.cshtml",
-      "TargetPath": "Views\\Login\\Login.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\45626490892\\Documents\\Ex\\rltpMVC\\Views\\Shared\\_FooterHomePage.cshtml",
       "TargetPath": "Views\\Shared\\_FooterHomePage.cshtml",
       "FileKind": "mvc"
@@ -2973,6 +2968,11 @@
     {
       "FilePath": "c:\\Users\\45626490892\\Documents\\Ex\\rltpMVC\\Views\\Espaco\\Index.cshtml",
       "TargetPath": "Views\\Espaco\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\45626490892\\Documents\\Ex\\rltpMVC\\Views\\Espaco2\\Index.cshtml",
+      "TargetPath": "Views\\Espaco2\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -2986,6 +2986,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\45626490892\\Documents\\Ex\\rltpMVC\\Views\\Cadastro\\Index.cshtml",
+      "TargetPath": "Views\\Cadastro\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\45626490892\\Documents\\Ex\\rltpMVC\\Views\\Shared\\_CookieConsentPartial.cshtml",
       "TargetPath": "Views\\Shared\\_CookieConsentPartial.cshtml",
       "FileKind": "mvc"
@@ -2996,8 +3001,18 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\45626490892\\Documents\\Ex\\rltpMVC\\Views\\Shared\\Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FilePath": "c:\\Users\\45626490892\\Documents\\Ex\\rltpMVC\\Views\\Shared\\Sucesso.cshtml",
+      "TargetPath": "Views\\Shared\\Sucesso.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\45626490892\\Documents\\Ex\\rltpMVC\\Views\\Shared\\Erro.cshtml",
+      "TargetPath": "Views\\Shared\\Erro.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\45626490892\\Documents\\Ex\\rltpMVC\\Views\\Cliente\\Login.cshtml",
+      "TargetPath": "Views\\Cliente\\Login.cshtml",
       "FileKind": "mvc"
     },
     {

@@ -2,7 +2,7 @@ namespace rltpMVC.Repositorio
 {
     public class RepositorioBase
     {
-        protected string ExtrairValorDoCAmpo(string nomeCampo, string linha)
+        protected string ExtrairValorDoCampo(string nomeCampo, string linha)
        {
            var chave = nomeCampo;
            var indiceChave = linha.IndexOf(chave);
