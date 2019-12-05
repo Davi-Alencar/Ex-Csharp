@@ -2,7 +2,7 @@ using rltpMVC.Models;
 
 namespace rltpMVC.ViewModels
 {
-    public class AgendamentoViewModel
+    public class AgendamentoViewModel : BaseViewModel
     {
         public Cliente Cliente {get; set;}
         public string NomeCliente {get; set;}

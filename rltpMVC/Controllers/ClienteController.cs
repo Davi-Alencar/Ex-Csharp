@@ -2,6 +2,7 @@ using System;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using rltpMVC.Enumeradores;
+using rltpMVC.Models;
 using rltpMVC.Repositorio;
 using rltpMVC.ViewModels;
 
@@ -78,6 +79,7 @@ namespace rltpMVC.Controllers
                 return View("Erro", new RespostaViewModel("Usuário não encontrado"));
             }
         }
+
 
         public IActionResult Historico()
         {

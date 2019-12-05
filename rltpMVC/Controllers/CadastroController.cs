@@ -14,6 +14,7 @@ namespace rltpMVC.Controllers
         {
             ViewData["NomeView"] = "Cadastro";
             ViewData["navView"] = "Nav";
+
             return View(new BaseViewModel()
             {
                 NomeView = "Cadastro",
@@ -40,17 +41,12 @@ namespace rltpMVC.Controllers
 
                     clienterepositorio.Inserir(cliente);
 
-                    return View("Sucesso", new RespostaViewModel()
-                    {
-                        NomeView = "Cadastro",
-                        UsuarioEmail = ObterUsuarioSession(),
-                        UsuarioNome = ObterNomeSession()
-                    });
+                    return View("Sucesso", new RespostaViewModel());
             }
             catch (Exception e)
             {
                 System.Console.WriteLine(e.StackTrace);
-                return View("Erro", new RespostaViewModel("Mensagem"));
+                return View("Erro", new RespostaViewModel("Erro404"));
                 
             }
         }

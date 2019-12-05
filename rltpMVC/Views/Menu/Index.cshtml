@@ -1,36 +1,3 @@
-<!DOCTYPE html>
-<html lang= "pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Rolê-Top</title>
-    <link href="imgrltp/logo.png" rel="icon" type="image/x-icon"/>
-    <link href="usuario.css" rel="stylesheet" type="text/css">
-</head>
-
-<body>
-    <header>
-        <nav>
-            <div class="dropdown">
-                <button class="dropbtn"> <img id="barranav" src="imgrltp/Captura de Tela (42) - Copia.png" alt="Barra de Navegação" title="Barra Nav"/> </button>
-                <div class="dropdown-content">
-                    
-                    <a href="rltp.html"> Principal </a>
-                    <a href="formulário.html"> Formulário </a>
-                    <a href="espaço.html"> Sobre o Espaço </a> 
-                    <a href="galeria.html"> Galeria </a> 
-                    <a href="login.html"> Login </a> 
-                    <a href="dúvidas.html"> Dúvidas </a>
-                    
-                </div>
-                
-                
-            </div>
-            
-            <img id="minilogo" src="imgrltp/logo - Copia.png" alt="Logotipo da Role-Top" title="logo"/>
-        </nav>
-    </header>
-    
     <main>
         
         <div id="corfor">
@@ -38,7 +5,7 @@
             <h2>Dados do Usuário</h2>
 
                 <div id="botoesfor">
-                        <form action='@Url.Action("Index","Menu"'>
+                        <form action='@Url.Action("Index","Menu")'>
                             <label for="fname">Nome Completo</label>
                             <input type="text" id="nome" name="nome" value="@Model.Cliente.Nome" placeholder="Nome do Cliente">
                             
@@ -71,9 +38,3 @@
         </div>
         
     </main>
-    
-</body>
-
-
-
-</html>
