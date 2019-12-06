@@ -72,14 +72,16 @@ Banner
   align-items: flex-end;
   max-width: 150em;
   margin-left: 100px; 
-  color: whitesmoke;
+  background-color: rgba(255, 255, 255, 0.61);
+  padding: 10px 10px 10px 10px;
   font-size: 0.8em;
 }
 
-#patrocínios p {
-  background-color: rgba(255, 255, 255, 0.61);
-  padding: 10px 10px 10px 10px;
+#patrocínios img{
+  display: flex;
+  align-content: space-between;
 }
+
 
 /*********************************************
 Parte 2
