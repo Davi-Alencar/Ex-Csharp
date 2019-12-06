@@ -59,3 +59,7 @@ nav {
     width: 7em;
     height: 2.6em;
   }
+
+  li {
+    list-style-type: none;
+  }

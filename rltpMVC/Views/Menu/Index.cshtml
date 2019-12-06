@@ -1,0 +1,40 @@
+    <main>
+        
+        <div id="corfor">
+
+            <h2>Dados do Usuário</h2>
+
+                <div id="botoesfor">
+                        <form action='@Url.Action("Index","Menu")'>
+                            <label for="fname">Nome Completo</label>
+                            <input type="text" id="nome" name="nome" value="@Model.Cliente.Nome" placeholder="Nome do Cliente">
+                            
+                            <label for="data">Data de Nascimento</label>
+                            <input type="date" id="data" name="data-nascimento" value="@Model.Cliente.DataNascimento" placeholder="Dia/Mês/Ano">
+                            
+                            <label for="documento">CPF/CNPJ</label>
+                            <input type="text" id="cpfcnpj" name="cpfcnpj" value="@Model.Cliente.Cpfcnpj" placeholder="Documento do Cliente">
+                            
+                            <label for="fname">Telefone</label>
+                            <input type="text" id="telefone" name="telefone" value="@Model.Cliente.Telefone" placeholder="Contato do Cliente")>
+                            
+                        
+                        <div id="bcon">
+                            <a href="#" class="confirmar">Editar meus Dados</a>
+                        </div>
+
+                        <div id="bneg">
+                            <a href="rltp.html" class="confirmar">Excluir Minha Conta</a>
+                        </div>
+
+                        <div id="bneg">
+                            <a href="formulário.html" class="confirmar">Cancelar Meu Evento</a>
+                        </div>
+
+                    </form>
+                </div>
+            </section>
+            
+        </div>
+        
+    </main>

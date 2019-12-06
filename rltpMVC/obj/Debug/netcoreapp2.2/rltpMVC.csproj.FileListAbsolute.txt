@@ -16,7 +16,6 @@ C:\Users\45626490892\Documents\Ex\rltpMVC\obj\Debug\netcoreapp2.2\rltpMVC.TagHel
 C:\Users\45626490892\Documents\Ex\rltpMVC\obj\Debug\netcoreapp2.2\rltpMVC.RazorCoreGenerate.cache
 C:\Users\45626490892\Documents\Ex\rltpMVC\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
 C:\Users\45626490892\Documents\Ex\rltpMVC\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
-C:\Users\45626490892\Documents\Ex\rltpMVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
 C:\Users\45626490892\Documents\Ex\rltpMVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
 C:\Users\45626490892\Documents\Ex\rltpMVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
 C:\Users\45626490892\Documents\Ex\rltpMVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
@@ -28,8 +27,13 @@ C:\Users\45626490892\Documents\Ex\rltpMVC\obj\Debug\netcoreapp2.2\rltpMVC.Views.
 C:\Users\45626490892\Documents\Ex\rltpMVC\obj\Debug\netcoreapp2.2\rltpMVC.dll
 C:\Users\45626490892\Documents\Ex\rltpMVC\obj\Debug\netcoreapp2.2\rltpMVC.pdb
 C:\Users\45626490892\Documents\Ex\rltpMVC\obj\Debug\netcoreapp2.2\rltpMVC.csproj.CopyComplete
-C:\Users\45626490892\Documents\Ex\rltpMVC\obj\Debug\netcoreapp2.2\Razor\Views\Login\Login.g.cshtml.cs
 C:\Users\45626490892\Documents\Ex\rltpMVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_FooterHomePage.g.cshtml.cs
 C:\Users\45626490892\Documents\Ex\rltpMVC\obj\Debug\netcoreapp2.2\Razor\Views\Espaco\Index.g.cshtml.cs
 C:\Users\45626490892\Documents\Ex\rltpMVC\obj\Debug\netcoreapp2.2\Razor\Views\Galeria\Index.g.cshtml.cs
 C:\Users\45626490892\Documents\Ex\rltpMVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Nav.g.cshtml.cs
+C:\Users\45626490892\Documents\Ex\rltpMVC\obj\Debug\netcoreapp2.2\Razor\Views\Espaco2\Index.g.cshtml.cs
+C:\Users\45626490892\Documents\Ex\rltpMVC\obj\Debug\netcoreapp2.2\Razor\Views\Cadastro\Index.g.cshtml.cs
+C:\Users\45626490892\Documents\Ex\rltpMVC\obj\Debug\netcoreapp2.2\Razor\Views\Cliente\Login.g.cshtml.cs
+C:\Users\45626490892\Documents\Ex\rltpMVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Erro.g.cshtml.cs
+C:\Users\45626490892\Documents\Ex\rltpMVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Sucesso.g.cshtml.cs
+C:\Users\45626490892\Documents\Ex\rltpMVC\obj\Debug\netcoreapp2.2\Razor\Views\Menu\Index.g.cshtml.cs

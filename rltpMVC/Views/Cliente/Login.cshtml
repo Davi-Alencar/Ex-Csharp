@@ -2,18 +2,18 @@
     <form method="POST" action='@Url.Action("Login", "Cliente")'>
             <form action="action_page">
                     <div class="imgcontainer">
-                      <img src="imgrltp/bb-8-icon-7.jpg" alt="Avatar" class="avatar">
+                      <img src="~/imgrltp/bb-8-icon-7.jpg" alt="Avatar" class="avatar">
                     </div>
                   
                     <div class="container">
-                      <label for="uname"><b>Nome de Usuário</b></label>
-                      <input type="text" placeholder="Usuário" name="usuario" required>
+                      <label for="email"><b>Email de Usuário</b></label>
+                      <input type="email" placeholder="Email" name="email" required>
                   
                       <label for="psw"><b>Senha</b></label>
                       <input type="password" placeholder="Sua senha" name="senha" required>
                   
                       <div id="bcon">
-                            <a href="usuario.html" class="confirmar">Login</a>
+                            <a asp-controller="Menu" asp-action="Index" class="confirmar">Login</a>
                       </div>
 
                   <div id="check">
@@ -22,15 +22,11 @@
                   </label>
                   
                   <label>
-                    <input type="checkbox" name="logadm"> Login como <a href="adm.html">ADM</a>
+                    <a asp-controller="Cadastro" asp-action="Index" class="confirmar">Quero me Cadastrar</a>
                   </label>
                   </div>
                 </div>
-              
-                <div class="containerc" style="background-color:#f1f1f1">
-                  <button type="button" class="cancelbtn">Cancelar</button>
-                  <span class="psw">Esqueçeu a <a href="#">senha?</a></span>
-                </div>
+
               </form>
             </form>
 

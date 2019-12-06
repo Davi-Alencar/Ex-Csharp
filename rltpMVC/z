@@ -1,0 +1,5 @@
+<button type="button" class="cancelbtn"><a href ="rltp.html">Cancelar</a></button>
+botao de cancelar
+
+<a asp-controller="Home" asp-action="Index" class="confirmar">Confirmar</a>
+botao confirmar

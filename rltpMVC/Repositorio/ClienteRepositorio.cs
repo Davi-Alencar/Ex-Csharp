@@ -1,10 +1,11 @@
+using System;
 using System.IO;
 using Microsoft.AspNetCore.Mvc;
 using rltpMVC.Models;
 
 namespace rltpMVC.Repositorio
 {
-    public class ClienteRepositorio
+    public class ClienteRepositorio : RepositorioBase
     {
         private const string PATH = "Database/Cliente.csv";
 
@@ -24,9 +25,31 @@ namespace rltpMVC.Repositorio
            return true;
        }
 
+       public Cliente ObterPor (string email)
+       {
+           var linhas = File.ReadAllLines(PATH);
+           foreach (var item in linhas)
+           {
+               if(ExtrairValorDoCampo("email", item).Equals(email))
+               {
+                   Cliente c = new Cliente();
+                   c.Nome = ExtrairValorDoCampo("nome", item);
+                   c.TipoUsuario = uint.Parse(ExtrairValorDoCampo("tipo_usuario", item));
+                   c.Cpfcnpj = ExtrairValorDoCampo("cpfcnpj", item);
+                   c.Email = ExtrairValorDoCampo("email", item);
+                   c.DataNascimento = DateTime.Parse(ExtrairValorDoCampo("data_nascimento", item));
+                   c.Telefone = ExtrairValorDoCampo("telefone", item);
+                   c.Senha = ExtrairValorDoCampo("senha", item);
+
+                   return c;
+               }
+           }
+           return null;
+       }
+
        private string PrepararRegistroCSV(Cliente cliente)
        {
-           return $"nome={cliente.Nome};email={cliente.Email};senha={cliente.Senha};endereco={cliente.Endereco};telefone={cliente.Telefone};data_nascimento={cliente.DataNascimento}";
+           return $"tipo_usuario={cliente.TipoUsuario};nome={cliente.Nome};cpfcnpj={cliente.Cpfcnpj};email={cliente.Email};senha={cliente.Senha};telefone={cliente.Telefone};data_nascimento={cliente.DataNascimento}";
        }
     }
 }
