@@ -1,9 +1,14 @@
+using System;
+
 namespace rltpMVC.Repositorio
 {
     public class RepositorioBase
     {
         protected string ExtrairValorDoCampo(string nomeCampo, string linha)
        {
+           var dateAndTime = DateTime.Now;
+           var date = dateAndTime.Date;
+
            var chave = nomeCampo;
            var indiceChave = linha.IndexOf(chave);
            var indiceTerminal = linha.IndexOf(";", indiceChave);

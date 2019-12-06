@@ -1,3 +1,4 @@
+using System;
 using Microsoft.AspNetCore.Mvc;
 using rltpMVC.Models;
 using rltpMVC.Repositorio;
@@ -12,13 +13,15 @@ namespace rltpMVC.Controllers
         AgendamentoRepositorio agendamentoRepositorio = new AgendamentoRepositorio();
         public IActionResult Index()
         {
+            ViewData["navView"] = "Nav";
+            ViewData["NomeView"] = "Menu";
             AgendamentoViewModel avm = new AgendamentoViewModel();
 
             var usuarioLogado = ObterUsuarioSession();
             var nomeUsuarioLogado = ObterNomeSession();
             if(!string.IsNullOrEmpty(nomeUsuarioLogado))
             {
-                avm.NomeCliente = nomeUsuarioLogado;
+                avm.Cliente = clienteRepositorio.ObterPor(usuarioLogado);
             }
             
             var clienteLogado = clienteRepositorio.ObterPor(usuarioLogado);
@@ -40,8 +43,6 @@ namespace rltpMVC.Controllers
                 avm.NomeCliente = nomeUsuario;
             }
 
-            ViewData["navView"] = "Nav";
-            ViewData["NomeView"] = "Agendamento";
             avm.UsuarioEmail = ObterUsuarioSession();
             avm.UsuarioNome = ObterNomeSession();
 

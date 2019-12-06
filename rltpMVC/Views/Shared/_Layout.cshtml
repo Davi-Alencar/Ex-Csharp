@@ -1,4 +1,6 @@
-﻿@{
+﻿@model rltpMVC.ViewModels.BaseViewModel
+
+@{
     var nomeView = (string) ViewData["NomeView"];
     var navView = (string) ViewData["navView"];
 }
@@ -37,7 +39,7 @@
         }
         else if("Menu".Equals(nomeView))
         {
-            <link href="~/css/usuario.css" rel="stylesheet" type="text/css">
+            <link href="~/css/menu.css" rel="stylesheet" type="text/css">
         }
 
 </head>
