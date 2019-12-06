@@ -1,7 +1,7 @@
 @model McBonaldsMVC.ViewModels.PedidoViewModel
 
 <main>
-   <h2>Manda Bala,@Model.NomeCliente!</h2>
+   <h2>Manda Bala, @Model.NomeCliente!</h2>
    <form method="POST" action='@Url.Action("Registrar", "Pedido")'>
        <div>
            <label for="nome">Nome Completo</label>
@@ -30,7 +30,7 @@
                    <option value="" disabled selected>Selecione</option>
                    @foreach (var hamburguer in Model.Hamburgueres)
                     {
-                        <option value=@hamburguer.Nome>@hamburguer.Nome por @hamburguer.Preco </option>
+                        <option value=@hamburguer.Nome>@hamburguer.Nome por R$@hamburguer.Preco </option>
                     }
                </select>
            </div>
@@ -40,7 +40,7 @@
                    <option value="" disabled selected>Selecione</option>
                    @foreach (var shake in Model.Shakes)
                     {
-                        <option value=@shake.Nome>@shake.Nome por @shake.Preco </option>
+                        <option value=@shake.Nome>@shake.Nome por R$@shake.Preco </option>
                     }
                </select>
            </div>
