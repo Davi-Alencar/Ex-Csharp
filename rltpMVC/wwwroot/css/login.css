@@ -89,7 +89,7 @@ form {
 }
 
 /* Full-width inputs */
-input[type=email], input[type=password] {
+input[type=email], input[type=password]  {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -98,12 +98,19 @@ input[type=email], input[type=password] {
   box-sizing: border-box;
 }
 
+input[type=submit] {
+  color: white;
+  border-style: none;
+  background-color: #4CAF50;
+  
+}
+
 /* Set a style for all buttons */
 .container button {
   background-color: #4CAF50;
   color: white;
   padding: 14px 20px;
-  margin: 8px 0;
+  margin: 2px 0;
   border: none;
   cursor: pointer;
   width: 100%;
@@ -165,15 +172,17 @@ span.psw {
 
 #bcon {
     background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 2px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
 }
 
-#bcon a {
+#bcon button p {
     display: flex;
     justify-content: center;
     color: white;

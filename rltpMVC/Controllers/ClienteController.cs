@@ -54,7 +54,7 @@ namespace rltpMVC.Controllers
                                 HttpContext.Session.SetString(SESSION_CLIENTE_NOME,cliente.Nome);
                                 HttpContext.Session.SetString(SESSION_CLIENTE_TIPO, cliente.TipoUsuario.ToString());
 
-                            return RedirectToAction("Historico","Cliente");
+                            return RedirectToAction("Index","Menu");
 
                             default:
                                 HttpContext.Session.SetString(SESSION_CLIENTE_EMAIL,usuario);

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using rltpMVC.Models;
+using rltpMVC.ViewModels;
 
 namespace rltpMVC.Controllers
 {
@@ -15,7 +16,12 @@ namespace rltpMVC.Controllers
             ViewData["NomeView"] = "Home";
             ViewData["navView"] = "Nav";
             
-            return View();
+            return View(new BaseViewModel()
+            {
+                NomeView = "Home",
+                UsuarioEmail = ObterUsuarioSession(),
+                UsuarioNome = ObterNomeSession()
+            });
         }
 
         public IActionResult Privacy()

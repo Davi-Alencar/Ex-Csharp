@@ -6,25 +6,28 @@
 
                 <div id="botoesfor">
                         <form action='@Url.Action("Index","Menu")'>
-                            <label for="fname">Nome Completo</label>
-                            <input type="text" id="nome" name="nome" value="@Model.Cliente.Nome" placeholder="Nome do Cliente">
+                            <label for="nome">Nome Completo</label>
+                            <input type="text" id="nome" name="nome" value="@Model.Cliente.Nome" placeholder="Nome do Usuário">
                             
-                            <label for="data">Data de Nascimento</label>
-                            <input type="date" id="data" name="data-nascimento" value="@Model.Cliente.DataNascimento" placeholder="Dia/Mês/Ano">
+                            <label for="cpfcnpj">CPF/CNPJ</label>
+                            <input type="text" id="cpfcnpj" name="cpfcnpj" value="@Model.Cliente.Cpfcnpj" placeholder="Documento do Usuário">
                             
-                            <label for="documento">CPF/CNPJ</label>
-                            <input type="text" id="cpfcnpj" name="cpfcnpj" value="@Model.Cliente.Cpfcnpj" placeholder="Documento do Cliente">
+                            <label for="telefone">Telefone</label>
+                            <input type="text" id="telefone" name="telefone" value="@Model.Cliente.Telefone" placeholder="Contato do Usuário")>
+
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" value="@Model.Cliente.Email" placeholder="Email do Usuário")>
+
+                            <!-- <label for="senha">Senha</label>
+                            <input type="password" id="senha" name="senha" value="@Model.Cliente.Senha" placeholder="Senha do Usuário")> -->
                             
-                            <label for="fname">Telefone</label>
-                            <input type="text" id="telefone" name="telefone" value="@Model.Cliente.Telefone" placeholder="Contato do Cliente")>
-                            
-                        
-                        <div id="bcon">
-                            <a href="#" class="confirmar">Editar meus Dados</a>
-                        </div>
 
                         <div id="bneg">
                             <a href="rltp.html" class="confirmar">Excluir Minha Conta</a>
+                        </div>
+
+                        <div id="bneg">
+                            <a asp-controller="Cliente" asp-action="Logoff" class="confirmar">Logoof</a>
                         </div>
 
                         <div id="bneg">
