@@ -37,3 +37,42 @@ C:\Users\45626490892\Documents\Ex\rltpMVC\obj\Debug\netcoreapp2.2\Razor\Views\Cl
 C:\Users\45626490892\Documents\Ex\rltpMVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Erro.g.cshtml.cs
 C:\Users\45626490892\Documents\Ex\rltpMVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Sucesso.g.cshtml.cs
 C:\Users\45626490892\Documents\Ex\rltpMVC\obj\Debug\netcoreapp2.2\Razor\Views\Menu\Index.g.cshtml.cs
+C:\Users\Davi Alencar\Documents\DEV\C#\Ex\rltpMVC\bin\Debug\netcoreapp2.2\rltpMVC.deps.json
+C:\Users\Davi Alencar\Documents\DEV\C#\Ex\rltpMVC\bin\Debug\netcoreapp2.2\rltpMVC.runtimeconfig.json
+C:\Users\Davi Alencar\Documents\DEV\C#\Ex\rltpMVC\bin\Debug\netcoreapp2.2\rltpMVC.runtimeconfig.dev.json
+C:\Users\Davi Alencar\Documents\DEV\C#\Ex\rltpMVC\bin\Debug\netcoreapp2.2\rltpMVC.dll
+C:\Users\Davi Alencar\Documents\DEV\C#\Ex\rltpMVC\bin\Debug\netcoreapp2.2\rltpMVC.pdb
+C:\Users\Davi Alencar\Documents\DEV\C#\Ex\rltpMVC\bin\Debug\netcoreapp2.2\rltpMVC.Views.dll
+C:\Users\Davi Alencar\Documents\DEV\C#\Ex\rltpMVC\bin\Debug\netcoreapp2.2\rltpMVC.Views.pdb
+C:\Users\Davi Alencar\Documents\DEV\C#\Ex\rltpMVC\obj\Debug\netcoreapp2.2\rltpMVC.csprojAssemblyReference.cache
+C:\Users\Davi Alencar\Documents\DEV\C#\Ex\rltpMVC\obj\Debug\netcoreapp2.2\rltpMVC.csproj.CoreCompileInputs.cache
+C:\Users\Davi Alencar\Documents\DEV\C#\Ex\rltpMVC\obj\Debug\netcoreapp2.2\rltpMVC.RazorAssemblyInfo.cache
+C:\Users\Davi Alencar\Documents\DEV\C#\Ex\rltpMVC\obj\Debug\netcoreapp2.2\rltpMVC.RazorAssemblyInfo.cs
+C:\Users\Davi Alencar\Documents\DEV\C#\Ex\rltpMVC\obj\Debug\netcoreapp2.2\rltpMVC.AssemblyInfoInputs.cache
+C:\Users\Davi Alencar\Documents\DEV\C#\Ex\rltpMVC\obj\Debug\netcoreapp2.2\rltpMVC.AssemblyInfo.cs
+C:\Users\Davi Alencar\Documents\DEV\C#\Ex\rltpMVC\obj\Debug\netcoreapp2.2\rltpMVC.TagHelpers.input.cache
+C:\Users\Davi Alencar\Documents\DEV\C#\Ex\rltpMVC\obj\Debug\netcoreapp2.2\rltpMVC.TagHelpers.output.cache
+C:\Users\Davi Alencar\Documents\DEV\C#\Ex\rltpMVC\obj\Debug\netcoreapp2.2\rltpMVC.RazorCoreGenerate.cache
+C:\Users\Davi Alencar\Documents\DEV\C#\Ex\rltpMVC\obj\Debug\netcoreapp2.2\Razor\Views\Cadastro\Index.g.cshtml.cs
+C:\Users\Davi Alencar\Documents\DEV\C#\Ex\rltpMVC\obj\Debug\netcoreapp2.2\Razor\Views\Cliente\Login.g.cshtml.cs
+C:\Users\Davi Alencar\Documents\DEV\C#\Ex\rltpMVC\obj\Debug\netcoreapp2.2\Razor\Views\Espaco2\Index.g.cshtml.cs
+C:\Users\Davi Alencar\Documents\DEV\C#\Ex\rltpMVC\obj\Debug\netcoreapp2.2\Razor\Views\Espaco\Index.g.cshtml.cs
+C:\Users\Davi Alencar\Documents\DEV\C#\Ex\rltpMVC\obj\Debug\netcoreapp2.2\Razor\Views\Galeria\Index.g.cshtml.cs
+C:\Users\Davi Alencar\Documents\DEV\C#\Ex\rltpMVC\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\Davi Alencar\Documents\DEV\C#\Ex\rltpMVC\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\Users\Davi Alencar\Documents\DEV\C#\Ex\rltpMVC\obj\Debug\netcoreapp2.2\Razor\Views\Menu\Index.g.cshtml.cs
+C:\Users\Davi Alencar\Documents\DEV\C#\Ex\rltpMVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Erro.g.cshtml.cs
+C:\Users\Davi Alencar\Documents\DEV\C#\Ex\rltpMVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Sucesso.g.cshtml.cs
+C:\Users\Davi Alencar\Documents\DEV\C#\Ex\rltpMVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\Davi Alencar\Documents\DEV\C#\Ex\rltpMVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_FooterHomePage.g.cshtml.cs
+C:\Users\Davi Alencar\Documents\DEV\C#\Ex\rltpMVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\Davi Alencar\Documents\DEV\C#\Ex\rltpMVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Nav.g.cshtml.cs
+C:\Users\Davi Alencar\Documents\DEV\C#\Ex\rltpMVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\Davi Alencar\Documents\DEV\C#\Ex\rltpMVC\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\Davi Alencar\Documents\DEV\C#\Ex\rltpMVC\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\Davi Alencar\Documents\DEV\C#\Ex\rltpMVC\obj\Debug\netcoreapp2.2\rltpMVC.RazorTargetAssemblyInfo.cache
+C:\Users\Davi Alencar\Documents\DEV\C#\Ex\rltpMVC\obj\Debug\netcoreapp2.2\rltpMVC.RazorTargetAssemblyInfo.cs
+C:\Users\Davi Alencar\Documents\DEV\C#\Ex\rltpMVC\obj\Debug\netcoreapp2.2\rltpMVC.Views.pdb
+C:\Users\Davi Alencar\Documents\DEV\C#\Ex\rltpMVC\obj\Debug\netcoreapp2.2\rltpMVC.dll
+C:\Users\Davi Alencar\Documents\DEV\C#\Ex\rltpMVC\obj\Debug\netcoreapp2.2\rltpMVC.pdb
+C:\Users\Davi Alencar\Documents\DEV\C#\Ex\rltpMVC\obj\Debug\netcoreapp2.2\rltpMVC.csproj.CopyComplete
