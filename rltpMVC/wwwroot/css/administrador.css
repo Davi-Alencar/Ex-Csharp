@@ -153,6 +153,29 @@ h1 ,h2 {
     background-color: #4CAF50;
     color: white;
   }
+  
+  #pedidosp {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #pedidosp td, #pedidosp th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #pedidosp tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #pedidosp tr:hover {background-color: #ddd;}
+  
+  #pedidosp th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(218, 140, 24);
+    color: white;
+  }
 
   .confirmar {
 

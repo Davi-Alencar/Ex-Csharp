@@ -12,7 +12,7 @@ namespace rltpMVC.Controllers
             
             return View(new BaseViewModel()
             {
-                NomeView = "Home",
+                NomeView = "Espaco2",
                 UsuarioEmail = ObterUsuarioSession(),
                 UsuarioNome = ObterNomeSession()
             });

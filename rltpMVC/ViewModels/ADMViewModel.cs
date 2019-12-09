@@ -3,7 +3,7 @@ using rltpMVC.Models;
 
 namespace rltpMVC.ViewModels
 {
-    public class ADMViewModel
+    public class ADMViewModel : BaseViewModel
     {
         public List<Agendamento> Agendamentos {get;set;}
         public uint PedidosAprovados {get;set;}
