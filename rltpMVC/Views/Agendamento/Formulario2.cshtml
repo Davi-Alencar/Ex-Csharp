@@ -1,0 +1,57 @@
+@model rltpMVC.ViewModels.AgendamentoViewModel   
+<main>
+        
+        <div id="corfor">
+            
+            
+            <section id="for">
+                
+                <div id="botoesfor">
+                    <form action='@Url.Action("Registrar2","Agendamento")'>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Seu email aqui...">
+                        
+                        <label for="metodoPagamento">Método de Pagamento</label>
+                        <select id="metodoPagamento" name="metodoPagamento">
+                        <option value="cartao">Cartão de Crédito</option>
+                        <option value="boleto">Boleto Bancário</option>
+                        </select>
+                        
+                        <div id="box">
+                        <label>
+                            <input type="checkbox" name="remember"> Gerar Boleto
+                        </label>
+                        </div>
+
+                        <label for="Bandeira">Bandeira</label>
+                        <input type="text" id="Bandeira" name="Bandeira" placeholder="Ex: Visa")>
+                        
+                        <label for="numCartao">Número do Cartão</label>
+                        <input type="text" id="numCartao" name="numCartao" placeholder="">
+                        
+                        <label for="nomeTitular">Nome do Titular</label>
+                        <input type="text" id="nomeTitular" name="nomeTitular" placeholder="Nome Completo">
+                        
+                        <label for="Validade">Validade do Cartão</label>
+                        <input type="text" id="Validade" name="Validade" placeholder="Mês/Ano">
+                        
+                        <label for="CVV">CVV</label>
+                        <input type="text" id="CVV" name="CVV" placeholder="Código de segurança">
+                        
+                        <label for="Som">Pacote com Som +R$--</label>
+                        <input type="text" id="Som" name="Som" placeholder="Pacote à parte">
+                        
+                        <label for="Luz">Pacote com Iluminação +R$--</label>
+                        <input type="text" id="Luz" name="Luz" placeholder="Pacote à parte">
+                        
+                        <div id="bcon">
+                            <button type="submit" class="confirmar">Confirmar</button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </section>
+            
+        </div>
+        
+    </main>

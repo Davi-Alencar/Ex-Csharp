@@ -81,7 +81,7 @@ nav {
 
 input[type=text], select {
     width: 100%;
-    padding: 12px 10px;
+    padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
@@ -89,6 +89,16 @@ input[type=text], select {
     box-sizing: border-box;
   }
   
+  #descricao, select {
+    width: 100%;
+    padding: 12px 20px;
+    padding-bottom: 110px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
 
   input[type=date], select {
     width: 100%;
@@ -129,15 +139,9 @@ input[type=text], select {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
-
   }
 
-#box {
-    display: flex;
-    justify-content: flex-end;
-}
-
-#bcon {
+  #bcon {
     background-color: #4CAF50;
   color: white;
   padding: 14px 20px;
@@ -147,7 +151,7 @@ input[type=text], select {
   width: 100%;
 }
 
-#bcon a {
+#bcon button {
     display: flex;
     justify-content: center;
     color: white;

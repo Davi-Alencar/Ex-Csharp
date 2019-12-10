@@ -47,7 +47,7 @@ namespace rltpMVC.Repositorio
            return null;
        }
 
-       private string PrepararRegistroCSV(Cliente cliente)
+       public string PrepararRegistroCSV(Cliente cliente)
        {
            return $"tipo_usuario={cliente.TipoUsuario};nome={cliente.Nome};cpfcnpj={cliente.Cpfcnpj};email={cliente.Email};senha={cliente.Senha};telefone={cliente.Telefone};data_nascimento={cliente.DataNascimento}";
        }

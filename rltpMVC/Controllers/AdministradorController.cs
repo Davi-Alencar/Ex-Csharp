@@ -1,5 +1,8 @@
+using System;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using rltpMVC.Enumeradores;
+using rltpMVC.Models;
 using rltpMVC.Repositorio;
 using rltpMVC.ViewModels;
 
@@ -12,42 +15,42 @@ namespace rltpMVC.Controllers
         {
             ViewData["NomeView"] = "Administrador";
             ViewData["navView"] = "Nav";
-
+            
             var ninguemLogado = string.IsNullOrEmpty(ObterUsuarioTipoSession());
             
             if (!ninguemLogado && (uint) TipoUsuario.ADMINISTRADOR == uint.Parse(ObterUsuarioTipoSession()))
             {
 
                 var pedidos = agendamentoRepositorio.ObterTodos();
-                ADMViewModel admViewModel = new ADMViewModel();
+                DashboardViewModel dashboardViewModel = new DashboardViewModel();
 
                 foreach(var pedido in pedidos)
                 {
                     switch(pedido.Status)
                     {
                         case (uint) StatusPedido.APROVADO:
-                            admViewModel.PedidosAprovados++;
+                            dashboardViewModel.PedidosAprovados++;
                         break;
 
                         case (uint) StatusPedido.REPROVADO:
-                            admViewModel.PedidosReprovados++;
+                            dashboardViewModel.PedidosReprovados++;
                         break;
 
                         default:
-                            admViewModel.PedidosPendentes++;
-                            admViewModel.Agendamentos.Add(pedido);
+                            dashboardViewModel.PedidosPendentes++;
+                            dashboardViewModel.Agendamentos.Add(pedido);
                         break;
                     }
                 }
-                admViewModel.NomeView = "Dashboard";
-                admViewModel.UsuarioEmail= ObterUsuarioSession();
+                dashboardViewModel.NomeView = "Dashboard";
+                dashboardViewModel.UsuarioEmail= ObterUsuarioSession();
 
-                return View(admViewModel); 
+                return View(dashboardViewModel); 
             } else {
                 return View("Erro", new RespostaViewModel()
                 {
                     NomeView = "Dashboard",
-                    Mensagem = "Você não tem permissão para acessar como Adm"
+                    Mensagem = "Você não tem permissão para acessar o Dashboard"
                 });
             }
         }

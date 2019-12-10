@@ -1,0 +1,49 @@
+@model rltpMVC.ViewModels.AgendamentoViewModel    
+
+        <div id="corfor">
+            
+            
+            <section id="for">
+                
+                <div id="botoesfor">
+                    <form action='@Url.Action("Registrar1","Agendamento")' method="POST">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome aqui...">
+                        
+                        <label for="data-nascimento">Data de Nascimento</label>
+                        <input type="date" id="data-nascimento" name="data-nascimento" placeholder="Dia/Mês/Ano">
+                        
+                        <label for="cpfcnpj">CPF/CNPJ</label>
+                        <input type="text" id="cpfcnpj" name="cpfcnpj" placeholder="000.000.000-00 ou 00.000.000/0000-00">
+                        
+                        <label for="telefone">Telefone</label>
+                        <input type="text" id="telefone" name="telefone" placeholder="(11) 0000-0000">
+                        
+                        <label for="tipoEvento">Tipo de Evento</label>
+                        <input type="text" id="tipoEvento" name="tipoEvento" placeholder="Ex: Casamento">
+                        
+                        <label for="dataEvento">Data do Evento</label>
+                        <input type="date" id="dataEvento" name="dataEvento">
+                        
+                        <label for="inicioEvento">Horário de Início do Evento</label>
+                        <input type="time" id="inicioEvento" name="inicioEvento" placeholder="Seu nome aqui...">
+                        
+                        <label for="terminoEvento">Horário de Término do Evento</label>
+                        <input type="time" id="terminoEvento" name="terminoEvento" placeholder="Seu nome aqui...">
+                        
+                        <label for="numPessoas">Número de Pessoas</label>
+                        <input type="text" id="numPessoas" name="numPessoas" placeholder="Quantidade de convidados...">
+                        
+                        <label for="descricaoEvento">Descrição do Evento</label>
+                        <input type="text" id="descricaoEvento" name="descricaoEvento" placeholder="Uma breve descrição com suas pretenções para este evento...">
+                        
+                        <div id="bcon">
+                            <button class="confirmar">Confirmar</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            
+        </div>
+        
+    </main>

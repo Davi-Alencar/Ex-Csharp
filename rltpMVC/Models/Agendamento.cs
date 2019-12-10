@@ -7,6 +7,8 @@ namespace rltpMVC.Models
     {
        public ulong Id {get;set;}
        public Cliente Cliente {get;set;}
+       public Evento Evento {get;set;}
+       public Pagamento Pagamento {get;set;}
        public DateTime DataDoPedido {get;set;}
        public double PrecoTotal {get;set;}
        public uint Status {get;set;}

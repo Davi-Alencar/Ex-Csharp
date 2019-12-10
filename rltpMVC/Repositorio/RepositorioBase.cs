@@ -4,7 +4,7 @@ namespace rltpMVC.Repositorio
 {
     public class RepositorioBase
     {
-        protected string ExtrairValorDoCampo(string nomeCampo, string linha)
+        public string ExtrairValorDoCampo(string nomeCampo, string linha)
        {
            var dateAndTime = DateTime.Now;
            var date = dateAndTime.Date;

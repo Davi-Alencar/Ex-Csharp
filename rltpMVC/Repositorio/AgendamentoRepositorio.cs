@@ -49,13 +49,31 @@ namespace rltpMVC.Repositorio
             foreach (var linha in linhas)
             {
                 Agendamento agendamento = new Agendamento();
+                agendamento.Cliente = new Cliente();
+                agendamento.Pagamento = new Pagamento();
+                agendamento.Evento = new Evento();
                 
                 agendamento.Id = ulong.Parse(ExtrairValorDoCampo("id", linha));
                 agendamento.Status = uint.Parse(ExtrairValorDoCampo("status_pedido", linha));
-                agendamento.Cliente = new Cliente();
                 agendamento.Cliente.Nome = ExtrairValorDoCampo("cliente_nome", linha);
+                agendamento.Cliente.DataNascimento = DateTime.Parse(ExtrairValorDoCampo("cliente_dataNascimento", linha));
+                agendamento.Cliente.Cpfcnpj = ExtrairValorDoCampo("cliente_cpfcnpj", linha);
                 agendamento.Cliente.Telefone = ExtrairValorDoCampo("cliente_telefone", linha);
                 agendamento.Cliente.Email = ExtrairValorDoCampo("cliente_email", linha);
+                agendamento.Evento.tipoEvento = ExtrairValorDoCampo("evento_tipoEvento", linha);
+                agendamento.Evento.dataEvento = DateTime.Parse(ExtrairValorDoCampo("evento_dataEvento", linha));
+                agendamento.Evento.inicioEvento = ExtrairValorDoCampo("evento_inicioEvento", linha);
+                agendamento.Evento.terminoEvento = ExtrairValorDoCampo("evento_terminoEvento", linha);
+                agendamento.Evento.numPessoas = ExtrairValorDoCampo("evento_numPessoas", linha);
+                agendamento.Evento.descricaoEvento = ExtrairValorDoCampo("evento_descricaoEvento", linha);
+                agendamento.Pagamento.metodoPagamento = ExtrairValorDoCampo("pagamento_metodoPagamento", linha);
+                agendamento.Pagamento.Bandeira = ExtrairValorDoCampo("pagamento_Bandeira", linha);
+                agendamento.Pagamento.numCartao = ExtrairValorDoCampo("pagamento_numCartao", linha);
+                agendamento.Pagamento.nomeTitular = ExtrairValorDoCampo("pagamento_nomeTitular", linha);
+                agendamento.Pagamento.Validade = ExtrairValorDoCampo("pagamento_Validade", linha);
+                agendamento.Pagamento.CVV = ExtrairValorDoCampo("pagamento_CVV", linha);
+                agendamento.Pagamento.Som = ExtrairValorDoCampo("pagamento_Som", linha);
+                agendamento.Pagamento.Luz = ExtrairValorDoCampo("pagamento_Luz", linha);
                 agendamento.PrecoTotal = double.Parse(ExtrairValorDoCampo("preco_total", linha));
                 agendamento.DataDoPedido = DateTime.Parse(ExtrairValorDoCampo("data_pedido", linha));
                 
@@ -102,11 +120,13 @@ namespace rltpMVC.Repositorio
             return resultado;
         }
 
-       private string PrepararPedidoCSV(Agendamento agendamento)
+       public string PrepararPedidoCSV(Agendamento agendamento)
        {
            Cliente c = agendamento.Cliente;
+           Evento e = agendamento.Evento;
+           Pagamento p = agendamento.Pagamento;
 
-           return $"id={agendamento.Id};status_pedido={agendamento.Status};cliente_nome={c.Nome};cliente_telefone={c.Telefone};cliente_email={c.Email};data_pedido={agendamento.DataDoPedido};preco_total={agendamento.PrecoTotal}";
+           return $"id={agendamento.Id};status_pedido={agendamento.Status};cliente_nome={c.Nome};cliente_dataNascimento={c.DataNascimento};cliente_cpfcnpj={c.Cpfcnpj};cliente_telefone={c.Telefone};cliente_email={c.Email};evento_tipoEvento={e.tipoEvento};evento_dataEvento={e.dataEvento};evento_inicioEvento={e.inicioEvento};evento_terminoEvento={e.terminoEvento};evento_numPessoas={e.numPessoas};evento_descricaoEvento={e.descricaoEvento};pagamento_metodoPagamento={p.metodoPagamento};pagamento_Bandeira={p.Bandeira};pagamento_numCartao={p.numCartao};pagamento_nomeTitular={p.nomeTitular};pagamento_Validade={p.Validade};pagamento_CVV={p.CVV};pagamento_Som={p.Som};pagamento_Luz={p.Luz};data_pedido={agendamento.DataDoPedido};preco_total={agendamento.PrecoTotal}";
        }
 
     }

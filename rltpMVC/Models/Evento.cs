@@ -4,8 +4,9 @@ namespace rltpMVC.Models
 {
     public class Evento
     {
-        public string tipoEvento {get;set;}
+        public Pagamento Pagamento {get;set;}
         public DateTime dataEvento {get;set;}
+        public string tipoEvento {get;set;}
         public string inicioEvento {get;set;}
         public string terminoEvento {get;set;}
         public string numPessoas {get;set;}
