@@ -3006,6 +3006,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\45626490892\\Documents\\Ex\\rltpMVC\\Views\\Administrador\\DadosPedidos.cshtml",
+      "TargetPath": "Views\\Administrador\\DadosPedidos.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\45626490892\\Documents\\Ex\\rltpMVC\\Views\\Shared\\Sucesso.cshtml",
       "TargetPath": "Views\\Shared\\Sucesso.cshtml",
       "FileKind": "mvc"

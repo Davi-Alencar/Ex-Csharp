@@ -9,6 +9,7 @@ namespace rltpMVC.ViewModels
         public uint PedidosAprovados {get;set;}
         public uint PedidosReprovados {get;set;}
         public uint PedidosPendentes {get;set;}
+        public List<Agendamento> PedidosTotais {get;set;}
         public DashboardViewModel()
         {
             this.Agendamentos = new List<Agendamento>();
