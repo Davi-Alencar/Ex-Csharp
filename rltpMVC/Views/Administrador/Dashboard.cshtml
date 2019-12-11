@@ -1,4 +1,4 @@
-@model rltpMVC.ViewModels.BaseViewModel
+@model rltpMVC.ViewModels.DashboardViewModel
  <main>
 
         <div id="cabec">
@@ -6,46 +6,26 @@
         <p>Aqui está a lista de eventos</p>
         </div>
 
-        <a href="decisão.html" ><h2>Eventos Pendentes (1)</h2> </a>
+        <h2>Eventos Pendentes (@Model.PedidosPendentes)</h2>
         <table id="pedidosp">
                     <tr>
                       <th>Nome</th>
                       <th>Evento</th>
                       <th>Situação</th>
                     </tr>
-                    <tr>
-                      <td>Alfreds Futterkiste</td>
-                      <td>Festa de 15 anos</td>
-                      <td>Aprovado!</td>
-                    </tr>
-                    <tr>
-                      <td>Berglunds snabbköp</td>
-                      <td>Balada</td>
-                      <td>Pendente...</td>
-                    </tr>
-                    <tr>
-                      <td>Cetrion Moctezuma</td>
-                      <td>Festa</td>
-                      <td>Aprovado!</td>
-                    </tr>
-                    <tr>
-                      <td>Ermac Handel</td>
-                      <td>Festa Fantasia</td>
-                      <td>Aprovado!</td>
-                    </tr>
-                    <tr>
-                      <td>Island Trading</td>
-                      <td>Balada Sertaneja</td>
-                      <td>Aprovado!</td>
-                    </tr>
-                    <tr>
-                      <td>Königlich Essen</td>
-                      <td>Show</td>
-                      <td>Aprovado!</td>
-                    </tr>
-                    
+                    @foreach(var pedido in Model.Agendamentos )
+                    {
+                        <tr>
+                            <td>@pedido.Cliente.Nome</td>
+                            <td>@pedido.Evento.tipoEvento</td>
+                            <td><a href='@Url.Action("Aprovar", "Pedido", new {id = @pedido.Id})'><i class="fas fa-check"></i></a></td>
+                            <td><a href='@Url.Action("Reprovar", "Pedido", new {id = @pedido.Id})'><i class="fas fa-times"></i></a></td>
+                        </tr>
+                    }
+
                   </table>
 
+                  
         
         <h2>Histórico de Eventos (10)</h2>
 

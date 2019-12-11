@@ -56,7 +56,6 @@ namespace rltpMVC.Repositorio
                 agendamento.Id = ulong.Parse(ExtrairValorDoCampo("id", linha));
                 agendamento.Status = uint.Parse(ExtrairValorDoCampo("status_pedido", linha));
                 agendamento.Cliente.Nome = ExtrairValorDoCampo("cliente_nome", linha);
-                agendamento.Cliente.DataNascimento = DateTime.Parse(ExtrairValorDoCampo("cliente_dataNascimento", linha));
                 agendamento.Cliente.Cpfcnpj = ExtrairValorDoCampo("cliente_cpfcnpj", linha);
                 agendamento.Cliente.Telefone = ExtrairValorDoCampo("cliente_telefone", linha);
                 agendamento.Cliente.Email = ExtrairValorDoCampo("cliente_email", linha);
@@ -108,6 +107,7 @@ namespace rltpMVC.Repositorio
                 {
                     linhaPedido = i;
                     resultado = true;
+                    break;
                 }
             }
 
@@ -126,7 +126,7 @@ namespace rltpMVC.Repositorio
            Evento e = agendamento.Evento;
            Pagamento p = agendamento.Pagamento;
 
-           return $"id={agendamento.Id};status_pedido={agendamento.Status};cliente_nome={c.Nome};cliente_dataNascimento={c.DataNascimento};cliente_cpfcnpj={c.Cpfcnpj};cliente_telefone={c.Telefone};cliente_email={c.Email};evento_tipoEvento={e.tipoEvento};evento_dataEvento={e.dataEvento};evento_inicioEvento={e.inicioEvento};evento_terminoEvento={e.terminoEvento};evento_numPessoas={e.numPessoas};evento_descricaoEvento={e.descricaoEvento};pagamento_metodoPagamento={p.metodoPagamento};pagamento_Bandeira={p.Bandeira};pagamento_numCartao={p.numCartao};pagamento_nomeTitular={p.nomeTitular};pagamento_Validade={p.Validade};pagamento_CVV={p.CVV};pagamento_Som={p.Som};pagamento_Luz={p.Luz};data_pedido={agendamento.DataDoPedido};preco_total={agendamento.PrecoTotal}";
+           return $"id={agendamento.Id};status_pedido={agendamento.Status};cliente_nome={c.Nome};cliente_cpfcnpj={c.Cpfcnpj};cliente_telefone={c.Telefone};cliente_email={c.Email};evento_tipoEvento={e.tipoEvento};evento_dataEvento={e.dataEvento};evento_inicioEvento={e.inicioEvento};evento_terminoEvento={e.terminoEvento};evento_numPessoas={e.numPessoas};evento_descricaoEvento={e.descricaoEvento};pagamento_metodoPagamento={p.metodoPagamento};pagamento_Bandeira={p.Bandeira};pagamento_numCartao={p.numCartao};pagamento_nomeTitular={p.nomeTitular};pagamento_Validade={p.Validade};pagamento_CVV={p.CVV};pagamento_Som={p.Som};pagamento_Luz={p.Luz};data_pedido={agendamento.DataDoPedido};preco_total={agendamento.PrecoTotal}";
        }
 
     }

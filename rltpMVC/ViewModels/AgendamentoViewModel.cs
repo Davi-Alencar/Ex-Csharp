@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using rltpMVC.Models;
 
 namespace rltpMVC.ViewModels
@@ -6,6 +7,10 @@ namespace rltpMVC.ViewModels
     {
         public Cliente Cliente {get; set;}
         public string NomeCliente {get; set;}
+
+        public List<Cliente> Clientes {get; set;}
+        public List<Evento> Eventos {get; set;}
+        public List<Pagamento> Pagamentos {get; set;}
 
         public AgendamentoViewModel()
         {

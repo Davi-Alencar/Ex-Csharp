@@ -28,13 +28,13 @@ namespace rltpMVC.Controllers
                 avm.NomeCliente = nomeUsuarioLogado;
             }
             
-            var clienteLogado = agendamentoRepositorio.ObterTodos(usuarioLogado); //Problema com obter todos
+            var clienteLogado = clienterepositorio.ObterPor(usuarioLogado);
             if(clienteLogado != null)
             {
                 avm.Cliente = clienteLogado;
             }
 
-            Agendamento agendamento = new Agendamento();
+            
             var emailCliente = ObterUsuarioSession();
             if(!string.IsNullOrEmpty(emailCliente))
             {
@@ -74,7 +74,6 @@ namespace rltpMVC.Controllers
             Cliente cliente = new Cliente()
             {
                 Nome = form["nome"],
-                DataNascimento = DateTime.Parse(form["dataNascimento"]),
                 Cpfcnpj = form["cpfcnpj"],
                 Telefone = form["telefone"],
                 Email = form["email"]
@@ -92,6 +91,7 @@ namespace rltpMVC.Controllers
 
             agendamento.Cliente = cliente;
             agendamento.Evento = evento;
+            agendamento.Pagamento = new Pagamento();
             agendamento.DataDoPedido = DateTime.Now;
             agendamento.PrecoTotal= 0.0;
 
@@ -108,9 +108,9 @@ namespace rltpMVC.Controllers
             
             ViewData["nomeView"] = "Formulario2";
             Agendamento agendamento = new Agendamento();
+            agendamento.Evento = new Evento();
 
             agendamento.Cliente.Nome = agendamentoRepositorio.ExtrairValorDoCampo("cliente_nome", linha);
-            agendamento.Cliente.DataNascimento = DateTime.Parse(agendamentoRepositorio.ExtrairValorDoCampo("cliente_dataNascimento", linha));
             agendamento.Cliente.Cpfcnpj = agendamentoRepositorio.ExtrairValorDoCampo("cliente_cpfcnpj", linha);
             agendamento.Cliente.Telefone = agendamentoRepositorio.ExtrairValorDoCampo("cliente_telefone", linha);
             agendamento.Cliente.Email = agendamentoRepositorio.ExtrairValorDoCampo("cliente_email", linha);

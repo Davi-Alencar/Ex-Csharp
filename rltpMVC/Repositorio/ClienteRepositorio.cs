@@ -37,7 +37,6 @@ namespace rltpMVC.Repositorio
                    c.TipoUsuario = uint.Parse(ExtrairValorDoCampo("tipo_usuario", item));
                    c.Cpfcnpj = ExtrairValorDoCampo("cpfcnpj", item);
                    c.Email = ExtrairValorDoCampo("email", item);
-                   c.DataNascimento = DateTime.Parse(ExtrairValorDoCampo("data_nascimento", item));
                    c.Telefone = ExtrairValorDoCampo("telefone", item);
                    c.Senha = ExtrairValorDoCampo("senha", item);
 
@@ -49,7 +48,7 @@ namespace rltpMVC.Repositorio
 
        public string PrepararRegistroCSV(Cliente cliente)
        {
-           return $"tipo_usuario={cliente.TipoUsuario};nome={cliente.Nome};cpfcnpj={cliente.Cpfcnpj};email={cliente.Email};senha={cliente.Senha};telefone={cliente.Telefone};data_nascimento={cliente.DataNascimento}";
+           return $"tipo_usuario={cliente.TipoUsuario};nome={cliente.Nome};cpfcnpj={cliente.Cpfcnpj};email={cliente.Email};senha={cliente.Senha};telefone={cliente.Telefone};";
        }
     }
 }

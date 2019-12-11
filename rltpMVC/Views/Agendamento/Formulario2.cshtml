@@ -8,8 +8,6 @@
                 
                 <div id="botoesfor">
                     <form action='@Url.Action("Registrar2","Agendamento")'>
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Seu email aqui...">
                         
                         <label for="metodoPagamento">Método de Pagamento</label>
                         <select id="metodoPagamento" name="metodoPagamento">
@@ -33,10 +31,10 @@
                         <input type="text" id="nomeTitular" name="nomeTitular" placeholder="Nome Completo">
                         
                         <label for="Validade">Validade do Cartão</label>
-                        <input type="text" id="Validade" name="Validade" placeholder="Mês/Ano">
+                        <input type="date" id="Validade" name="Validade" placeholder="Mês/Ano">
                         
                         <label for="CVV">CVV</label>
-                        <input type="text" id="CVV" name="CVV" placeholder="Código de segurança">
+                        <input type="text" id="CVV" name="CVV" max="3" placeholder="Código de segurança">
                         
                         <label for="Som">Pacote com Som +R$--</label>
                         <input type="text" id="Som" name="Som" placeholder="Pacote à parte">

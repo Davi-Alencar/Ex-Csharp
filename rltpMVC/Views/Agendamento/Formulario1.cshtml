@@ -8,37 +8,37 @@
                 <div id="botoesfor">
                     <form action='@Url.Action("Registrar1","Agendamento")' method="POST">
                         <label for="nome">Nome Completo</label>
-                        <input type="text" id="nome" name="nome" placeholder="Seu nome aqui...">
-                        
-                        <label for="data-nascimento">Data de Nascimento</label>
-                        <input type="date" id="data-nascimento" name="data-nascimento" placeholder="Dia/Mês/Ano">
+                        <input type="text" id="nome" name="nome" value="@Model.Cliente.Nome" placeholder="Seu nome aqui..." required>
                         
                         <label for="cpfcnpj">CPF/CNPJ</label>
-                        <input type="text" id="cpfcnpj" name="cpfcnpj" placeholder="000.000.000-00 ou 00.000.000/0000-00">
+                        <input type="text" id="cpfcnpj" name="cpfcnpj" value="@Model.Cliente.Cpfcnpj" placeholder="000.000.000-00 ou 00.000.000/0000-00" required>
                         
                         <label for="telefone">Telefone</label>
-                        <input type="text" id="telefone" name="telefone" placeholder="(11) 0000-0000">
+                        <input type="text" id="telefone" name="telefone" value="@Model.Cliente.Telefone" placeholder="(11) 0000-0000" required>
+
+                        <label for="telefone">Email</label>
+                        <input type="email" id="email" name="email" value="@Model.Cliente.Email" placeholder="Email para contato" required>
                         
                         <label for="tipoEvento">Tipo de Evento</label>
-                        <input type="text" id="tipoEvento" name="tipoEvento" placeholder="Ex: Casamento">
+                        <input type="text" id="tipoEvento" name="tipoEvento" placeholder="Ex: Casamento" required>
                         
                         <label for="dataEvento">Data do Evento</label>
-                        <input type="date" id="dataEvento" name="dataEvento">
+                        <input type="date" id="dataEvento" name="dataEvento" min="2019-12-01" max="2022-12-31" required>
                         
                         <label for="inicioEvento">Horário de Início do Evento</label>
-                        <input type="time" id="inicioEvento" name="inicioEvento" placeholder="Seu nome aqui...">
+                        <input type="time" id="inicioEvento" name="inicioEvento" placeholder="Seu nome aqui..." required>
                         
                         <label for="terminoEvento">Horário de Término do Evento</label>
-                        <input type="time" id="terminoEvento" name="terminoEvento" placeholder="Seu nome aqui...">
+                        <input type="time" id="terminoEvento" name="terminoEvento" placeholder="Seu nome aqui..." required>
                         
                         <label for="numPessoas">Número de Pessoas</label>
-                        <input type="text" id="numPessoas" name="numPessoas" placeholder="Quantidade de convidados...">
+                        <input type="number" id="numPessoas" name="numPessoas" min="0" max="250" step="5" placeholder="Quantidade de convidados..." required>
                         
                         <label for="descricaoEvento">Descrição do Evento</label>
-                        <input type="text" id="descricaoEvento" name="descricaoEvento" placeholder="Uma breve descrição com suas pretenções para este evento...">
+                        <input type="text" id="descricaoEvento" name="descricaoEvento" placeholder="Uma breve descrição com suas pretenções para este evento..." required>
                         
                         <div id="bcon">
-                            <button class="confirmar">Confirmar</button>
+                            <button type="submit" class="confirmar" placeholder="Confirmar"><p>Confirmar</p> </button>
                         </div>
                     </form>
                 </div>
