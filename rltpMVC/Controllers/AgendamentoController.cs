@@ -109,7 +109,6 @@ namespace rltpMVC.Controllers
             ViewData["nomeView"] = "Formulario2";
             Agendamento agendamento = new Agendamento();
             agendamento.Evento = new Evento();
-            agendamento.Pagamento = new Pagamento();
 
             agendamento.Cliente.Nome = agendamentoRepositorio.ExtrairValorDoCampo("cliente_nome", linha);
             agendamento.Cliente.Cpfcnpj = agendamentoRepositorio.ExtrairValorDoCampo("cliente_cpfcnpj", linha);

@@ -21,8 +21,10 @@ namespace rltpMVC.Repositorio
        {
            var quantidadePedidos = File.ReadAllLines(PATH).Length;
            agendamento.Id = (ulong) ++quantidadePedidos;
+
            var linha = new string[] {PrepararPedidoCSV(agendamento)};
            File.AppendAllLines(PATH, linha);
+           
            return true;
        }
 

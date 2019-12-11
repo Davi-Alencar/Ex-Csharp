@@ -16,7 +16,7 @@
                     @foreach(var pedido in Model.Agendamentos )
                     {
                         <tr>
-                            <a href='@Url.Action()'><td>@pedido.Cliente.Nome</td></a>
+                            <a href='@Url.Action("Visualizar","Agendamento", new {id = @pedido.Id})'><td>@pedido.Cliente.Nome</td></a>
                             <a><td>@pedido.Evento.tipoEvento</td></a>
                             <td><a href='@Url.Action("Aprovar", "Agendamento", new {id = @pedido.Id})'><i class="fas fa-check">Aprovar</i></a> <a href='@Url.Action("Reprovar", "Agendamento", new {id = @pedido.Id})'><i class="fas fa-times">Reprovar</i></a></td>
                         </tr>
@@ -26,21 +26,19 @@
 
                   
         
-        <h2>Histórico de Eventos (10)</h2>
-
-            <table id="pedidos">
-                    <tr>
-                      <th>Nome</th>
-                      <th>Evento</th>
-                      <th>Situação</th>
-                    </tr>
-                    <tr>
-                      <td>Alfreds Futterkiste</td>
-                      <td>Festa de 15 anos</td>
-                      <td>Aprovado!</td>
-                    </tr>
-                    
-                  </table>
+          <h2>Histórico de Eventos()</h2>
+              <table id="pedidos">
+                      <tr>
+                        <th>Nome</th>
+                        <th>Evento</th>
+                        <th>Situação</th>
+                      </tr>
+                      <tr>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Festa de 15 anos</td>
+                        <td>Aprovado!</td>
+                      </tr>
+              </table>
 
     <div id="bcon">
         <a href="rltp.html" class="confirmar">Sair</a>
