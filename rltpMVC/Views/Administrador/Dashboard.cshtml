@@ -10,15 +10,19 @@
         <table id="pedidosp">
                     <tr>
                       <th>Nome</th>
-                      <th>Evento</th>
-                      <th>Situação</th>
+                      <th>Tipo de Evento</th>
+                      <th>Data do Evento</th>
+                      <th>Q. de Pessoas</th>
+                      <th>Veredito</th>
                     </tr>
                     @foreach(var pedido in Model.Agendamentos )
                     {
                         <tr>
-                            <a href='@Url.Action("Visualizar","Agendamento", new {id = @pedido.Id})'><td>@pedido.Cliente.Nome</td></a>
+                            <td><a href='@Url.Action("DadosPedidos","Administrador", new {id = @pedido.Id})'>@pedido.Cliente.Nome</a></td>
                             <a><td>@pedido.Evento.tipoEvento</td></a>
-                            <td><a href='@Url.Action("Aprovar", "Agendamento", new {id = @pedido.Id})'><i class="fas fa-check">Aprovar</i></a> <a href='@Url.Action("Reprovar", "Agendamento", new {id = @pedido.Id})'><i class="fas fa-times">Reprovar</i></a></td>
+                            <a><td>@pedido.Evento.dataEvento</td></a>
+                            <a><td>@pedido.Evento.numPessoas</td></a>
+                            <td><a href='@Url.Action("Aprovar", "Agendamento", new {id = @pedido.Id})'><i class="fas fa-check">Aprovar</i></a> / / <a href='@Url.Action("Reprovar", "Agendamento", new {id = @pedido.Id})'><i class="fas fa-times">Reprovar</i></a></td>
                         </tr>
                     }
 
@@ -26,16 +30,25 @@
 
                   
         
-          <h2>Histórico de Eventos()</h2>
+          <h2>Histórico de Eventos(@foreach(var item in Model.PedidosTotais)
+            {
+              @item;
+              break;
+            })
+          </h2>
               <table id="pedidos">
                       <tr>
                         <th>Nome</th>
-                        <th>Evento</th>
+                        <th>Tipo de Evento</th>
+                        <th>Data do Evento</th>
+                        <th>Q. de Pessoas</th>
                         <th>Situação</th>
                       </tr>
                       <tr>
                         <td>Alfreds Futterkiste</td>
-                        <td>Festa de 15 anos</td>
+                        <td>Festa</td>
+                        <td>15/11/2020</td>
+                        <td>15</td>
                         <td>Aprovado!</td>
                       </tr>
               </table>

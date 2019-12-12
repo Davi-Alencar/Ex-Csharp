@@ -33,9 +33,8 @@ namespace rltpMVC.Controllers
                    form["cpfcnpj"],
                    form["telefone"],
                    form["email"],
-                   form["senha"],
-                   DateTime.Parse(form["data-nascimento"]
-                   ));
+                   form["senha"]
+                   );
 
                     cliente.TipoUsuario = (uint) TipoUsuario.CLIENTE;
 

@@ -1,28 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Davi Alencar\\Documents\\DEV\\C#\\Ex\\McBonaldsMVC\\McBonaldsMVC.csproj": {}
+    "C:\\Users\\45626490892\\Documents\\Ex\\McBonaldsMVC\\McBonaldsMVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Davi Alencar\\Documents\\DEV\\C#\\Ex\\McBonaldsMVC\\McBonaldsMVC.csproj": {
+    "C:\\Users\\45626490892\\Documents\\Ex\\McBonaldsMVC\\McBonaldsMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Davi Alencar\\Documents\\DEV\\C#\\Ex\\McBonaldsMVC\\McBonaldsMVC.csproj",
+        "projectUniqueName": "C:\\Users\\45626490892\\Documents\\Ex\\McBonaldsMVC\\McBonaldsMVC.csproj",
         "projectName": "McBonaldsMVC",
-        "projectPath": "C:\\Users\\Davi Alencar\\Documents\\DEV\\C#\\Ex\\McBonaldsMVC\\McBonaldsMVC.csproj",
-        "packagesPath": "C:\\Users\\Davi Alencar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Davi Alencar\\Documents\\DEV\\C#\\Ex\\McBonaldsMVC\\obj\\",
+        "projectPath": "C:\\Users\\45626490892\\Documents\\Ex\\McBonaldsMVC\\McBonaldsMVC.csproj",
+        "packagesPath": "C:\\Users\\45626490892\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\45626490892\\Documents\\Ex\\McBonaldsMVC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Davi Alencar\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\45626490892\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

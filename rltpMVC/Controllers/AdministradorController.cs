@@ -11,6 +11,8 @@ namespace rltpMVC.Controllers
     public class AdministradorController : AbstractController
     {
         AgendamentoRepositorio agendamentoRepositorio = new AgendamentoRepositorio(); 
+        ClienteRepositorio clienteRepositorio = new ClienteRepositorio();
+        AgendamentoViewModel agendamentoViewModel = new AgendamentoViewModel();
         public IActionResult Dashboard()
         {
             ViewData["NomeView"] = "Administrador";
@@ -41,7 +43,12 @@ namespace rltpMVC.Controllers
                             dashboardViewModel.Agendamentos.Add(pedido);
                         break;
                     }
+
+                    var pedidosTotais= agendamentoRepositorio.ObterPorPedidosTotais(pedido);
+                    dashboardViewModel.PedidosTotais.Add(pedidosTotais);
                 }
+
+                
                 dashboardViewModel.NomeView = "Dashboard";
                 dashboardViewModel.UsuarioEmail= ObterUsuarioSession();
 
@@ -53,6 +60,22 @@ namespace rltpMVC.Controllers
                     Mensagem = "Você não tem permissão para acessar o Dashboard"
                 });
             }
+        }
+
+        public IActionResult DadosPedidos(ulong id)
+        {
+            ViewData["navView"] = "Nav";
+            ViewData["NomeView"] = "Menu";
+            
+            AgendamentoViewModel avm = new AgendamentoViewModel();
+            var evento = agendamentoRepositorio.ObterPor(id);
+
+            avm.Agendamento = evento;
+            avm.UsuarioEmail = ObterUsuarioSession();
+            avm.UsuarioNome = ObterNomeSession();
+            avm.NomeView = "Nao sei";
+
+            return View(avm);
         }
     }
 }

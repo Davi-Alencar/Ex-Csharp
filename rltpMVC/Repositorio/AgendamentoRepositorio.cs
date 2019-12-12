@@ -95,6 +95,21 @@ namespace rltpMVC.Repositorio
             }
             return null;
         }
+
+        public int ObterPorPedidosTotais(Agendamento agendamento)
+        {
+            var pedidosTotais = ObterTodos();
+            int eventos = 0;
+            foreach(var item in pedidosTotais)
+            {
+                if(item.Status != (uint) Enumeradores.StatusPedido.PENDENTE)
+                {
+                    eventos++;
+                }
+            }
+            return eventos;
+        }
+
         public bool Atualizar(Agendamento agendamento)
         {
             var pedidosTotais = File.ReadAllLines(PATH);
