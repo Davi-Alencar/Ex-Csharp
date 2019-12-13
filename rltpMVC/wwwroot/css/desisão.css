@@ -88,6 +88,27 @@ input[type=text], select {
     border-radius: 4px;
     box-sizing: border-box;
   }
+
+  input[type=number] {
+    width: 100%;
+    padding: 12px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=texto] {
+    width: 100%;
+    padding: 12px 20px;
+    padding-bottom: 110px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
   
 
   input[type=date], select {

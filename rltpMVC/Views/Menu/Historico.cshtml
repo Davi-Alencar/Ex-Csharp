@@ -1,0 +1,45 @@
+@model rltpMVC.ViewModels.HistoricoViewModel
+ <main>
+
+        <div id="cabec">
+        <h1>Bem-Vindo</h1>
+        <p>Aqui está a lista de eventos</p>
+        </div>
+
+          <h2>Histórico de Eventos</h2>
+              <table id="pedidos">
+                      <tr>
+                        <th>Nome</th>
+                        <th>Tipo de Evento</th>
+                        <th>Data do Evento</th>
+                        <th>Q. de Pessoas</th>
+                        <th>Situação</th>
+                      </tr>
+          @foreach(var item in Model.Agendamentos)
+            {
+                      <tr>
+                        <td>@item.Cliente.Nome</td>
+                            <a><td>@item.Evento.tipoEvento</td></a>
+                            <a><td>@item.Evento.dataEvento</td></a>
+                            <a><td>@item.Evento.numPessoas</td></a>
+                            @if(item.Status.Equals(1))
+                              {
+                                <td>Aprovado!</td>
+                              } 
+                              else if(item.Status.Equals(2))
+                              {
+                                <td>Rejeitado.</td>
+                              }
+                              else if(item.Status.Equals(0))
+                              {
+                                <td>Pendente</td>
+                              }
+                      </tr>
+                }
+                </table>
+
+    <div id="bcon">
+        <a asp-controller="Cliente" asp-action="Logoff" class="confirmar">Sair</a>
+    </div>
+    
+    </main>

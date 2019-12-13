@@ -151,6 +151,7 @@ input[type=text], select {
     margin: 4px 2px;
     cursor: pointer;
     max-width: 20em;
+    text-decoration: none;
   }
 
 

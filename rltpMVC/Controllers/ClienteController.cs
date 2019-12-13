@@ -31,6 +31,7 @@ namespace rltpMVC.Controllers
     public IActionResult Login(IFormCollection form)
         {
             ViewData["Action"] = "Login";
+            ViewData["navView"] = "Erro";
             try
             {
                 System.Console.WriteLine("===================");
@@ -67,14 +68,17 @@ namespace rltpMVC.Controllers
                         
 
                     } else {
+                        ViewData["navView"] = "Erro";
                         return View("Erro", new RespostaViewModel("Senha Incorreta"));
                     } 
                 } else {
+                    ViewData["navView"] = "Erro";
                     return View("Erro", new RespostaViewModel($"Usuário {usuario} não encontrado"));
                 }
             }
             catch (Exception e)
             {
+                ViewData["navView"] = "Erro";
                 System.Console.WriteLine(e.StackTrace);
                 return View("Erro", new RespostaViewModel("Usuário não encontrado"));
             }

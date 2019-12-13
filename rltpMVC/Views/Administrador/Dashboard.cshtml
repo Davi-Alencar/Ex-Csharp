@@ -44,17 +44,31 @@
                         <th>Q. de Pessoas</th>
                         <th>Situação</th>
                       </tr>
+          @foreach(var item in Model.AgendamentosVistos)
+            {
+              if(!item.Status.Equals(0))
+              {
+
                       <tr>
-                        <td>Alfreds Futterkiste</td>
-                        <td>Festa</td>
-                        <td>15/11/2020</td>
-                        <td>15</td>
-                        <td>Aprovado!</td>
+                        <td><a href='@Url.Action("DadosPedidos","Administrador", new {id = @item.Id})'>@item.Cliente.Nome</a></td>
+                            <a><td>@item.Evento.tipoEvento</td></a>
+                            <a><td>@item.Evento.dataEvento</td></a>
+                            <a><td>@item.Evento.numPessoas</td></a>
+                            @if(item.Status.Equals(1))
+                              {
+                                <td>Aprovado!</td>
+                              } 
+                              else if(item.Status.Equals(2))
+                              {
+                                <td>Rejeitado.</td>
+                              }
                       </tr>
-              </table>
+                      }
+                    }
+                </table>
 
     <div id="bcon">
-        <a href="rltp.html" class="confirmar">Sair</a>
+        <a asp-controller="Cliente" asp-action="Logoff" class="confirmar">Sair</a>
     </div>
     
     </main>

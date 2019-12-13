@@ -2,9 +2,9 @@
         
         <div id="corfor">
 
-            <h2>Dados do Usuário</h2>
 
                 <div id="botoesfor">
+                        <h2>Dados do Usuário</h2>
                         <form action='@Url.Action("Index","Menu")'>
                             <label for="nome">Nome Completo</label>
                             <input type="text" id="nome" name="nome" value="@Model.Cliente.Nome" placeholder="Nome do Usuário">
@@ -20,21 +20,16 @@
 
                             <!-- <label for="senha">Senha</label>
                             <input type="password" id="senha" name="senha" value="@Model.Cliente.Senha" placeholder="Senha do Usuário")> -->
-                            
 
-                        <div id="bneg">
-                            <a href="rltp.html" class="confirmar">Excluir Minha Conta</a>
-                        </div>
-
-                        <div id="bneg">
+                        <div id="bcon">
                             <a asp-controller="Agendamento" asp-action="Formulario1" class="confirmar">Agendar um Evento</a>
                         </div>
 
-                        <div id="bneg">
-                            <a href="formulário.html" class="confirmar">Cancelar Meu Evento</a>
+                        <div id="bcon">
+                            <a asp-controller="Menu" asp-action="Historico" class="confirmar">Histórico de Eventos</a>
                         </div>
-
                     </form>
+                    
                 </div>
             </section>
             

@@ -1,7 +1,8 @@
 @model rltpMVC.ViewModels.AgendamentoViewModel
     <main>
         
-        <div id="corfor">
+        <div id="botoesfor">
+            <div id="corfor">
 
             <h2>Dados do Usuário</h2>
 
@@ -12,52 +13,45 @@
                         <input type="text" id="cpfcnpj" name="cpfcnpj" value="@Model.Agendamento.Cliente.Cpfcnpj" placeholder="000.000.000-00 ou 00.000.000/0000-00" readonly>
                         
                         <label for="telefone">Telefone</label>
-                        <input type="text" id="telefone" name="telefone" value="@Model.Cliente.Telefone" placeholder="(11) 0000-0000" readonly>
+                        <input type="text" id="telefone" name="telefone" value="@Model.Agendamento.Cliente.Telefone" placeholder="(11) 0000-0000" readonly>
 
-                        <label for="telefone">Email</label>
-                        <input type="email" id="email" name="email" value="@Model.Cliente.Email" placeholder="Email para contato" readonly>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" value="@Model.Agendamento.Cliente.Email" placeholder="Email para contato" readonly>
                         
                         <label for="tipoEvento">Tipo de Evento</label>
-                        <input type="text" id="tipoEvento" name="tipoEvento" value="@Model.Evento.tipoEvento" placeholder="Ex: Casamento" readonly>
+                        <input type="text" id="tipoEvento" name="tipoEvento" value="@Model.Agendamento.Evento.tipoEvento" placeholder="Ex: Casamento" readonly>
                         
                         <label for="dataEvento">Data do Evento</label>
-                        <input type="date" id="dataEvento" name="dataEvento" value="@Model.Evento.dataEvento" min="2019-12-01" max="2022-12-31" readonly>
+                        <input type="text" id="dataEvento" name="dataEvento" value="@Model.Agendamento.Evento.dataEvento" min="2019-12-01" max="2022-12-31" readonly>
                         
                         <label for="inicioEvento">Horário de Início do Evento</label>
-                        <input type="time" id="inicioEvento" name="inicioEvento" value="@Model.Evento.inicioEvento" placeholder="Seu nome aqui..." readonly>
+                        <input type="time" id="inicioEvento" name="inicioEvento" value="@Model.Agendamento.Evento.inicioEvento" placeholder="Seu nome aqui..." readonly>
                         
                         <label for="terminoEvento">Horário de Término do Evento</label>
-                        <input type="time" id="terminoEvento" name="terminoEvento" value="@Model.Evento.terminoEvento" placeholder="Seu nome aqui..." readonly>
+                        <input type="time" id="terminoEvento" name="terminoEvento" value="@Model.Agendamento.Evento.terminoEvento" placeholder="Seu nome aqui..." readonly>
                         
                         <label for="numPessoas">Número de Pessoas</label>
-                        <input type="number" id="numPessoas" name="numPessoas" min="0" max="250" step="5" value="@Model.Evento.numPessoas" placeholder="Quantidade de convidados..." readonly>
-                        
+                        <input type="text" id="numPessoas" name="numPessoas" min="0" max="250" step="5" value="@Model.Agendamento.Evento.numPessoas" placeholder="Quantidade de convidados..." readonly>
+                         
                         <label for="descricaoEvento">Descrição do Evento</label>
-                        <textarea type="text" id="descricaoEvento" name="descricaoEvento" cols="20" rows="7" value="@Model.Evento.descricaoEvento" placeholder="Uma breve descrição com suas pretenções para este evento..." readonly></textarea>
+                        <input type="text" id="descricaoEvento" name="descricaoEvento" value="@Model.Agendamento.Evento.descricaoEvento" placeholder="Uma breve descrição com suas pretenções para este evento..." readonly>
+
             
             <h2>Método de Pagamento</h2>
             <section id="for">
                 
-                <div id="botoesfor">
                     <form>
                         <label for="metodoPagamento">Método de Pagamento</label>
-                        <select id="metodoPagamento" name="metodoPagamento" readonly>
-                        <option value="cartao">Cartão de Crédito</option>
-                        <option value="boleto">Boleto Bancário</option>
-                        </select>
-                        
+                        <input type="text" id="metodoPagamento" name="metodoPagamento" value="@Model.Agendamento.Pagamento.metodoPagamento" readonly>
+
                         <label for="Som">Pacote com Som +R$--</label>
-                        <input type="text" id="Som" name="Som" placeholder="Pacote à parte" readonly>
-                        
+                        <input type="text" id="Som" name="Som" value="@Model.Agendamento.Pagamento.Som" readonly>
+
                         <label for="Luz">Pacote com Iluminação +R$--</label>
-                        <input type="text" id="Luz" name="Luz" placeholder="Pacote à parte" readonly>
+                        <input type= "text" id="Luz" name="Luz" value="@Model.Agendamento.Pagamento.Luz" readonly>             
                         
                         <div id="bcon">
-                            <a href="adm.html" class="confirmar">Aprovar</a>
-                        </div>
-
-                        <div id="bneg">
-                            <a href="adm.html" class="confirmar">Rejeitar</a>
+                            <a asp-controller="Administrador" asp-action="Dashboard" class="confirmar">Voltar</a>
                         </div>
 
                     </form>

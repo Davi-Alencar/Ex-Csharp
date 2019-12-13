@@ -1,4 +1,5 @@
 using System;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using rltpMVC.Models;
 using rltpMVC.Repositorio;
@@ -47,6 +48,22 @@ namespace rltpMVC.Controllers
             avm.UsuarioNome = ObterNomeSession();
 
             return View(avm);
+        }
+
+        public IActionResult Historico()
+        {
+            ViewData["navView"] = "Nav";
+            ViewData["NomeView"] = "Historico";
+            
+            var emailCliente = HttpContext.Session.GetString(SESSION_CLIENTE_EMAIL);
+            var agendamentoCliente = agendamentoRepositorio.ObterTodosPorCliente(emailCliente);
+
+            return View(new HistoricoViewModel()
+            {
+                Agendamentos = agendamentoCliente,
+                UsuarioEmail = ObterUsuarioSession(),
+                UsuarioNome = ObterNomeSession()
+            });
         }
     }
 }

@@ -11,8 +11,8 @@
                         
                         <label for="metodoPagamento">Método de Pagamento</label>
                         <select id="metodoPagamento" name="metodoPagamento">
-                        <option value="cartao">Cartão de Crédito</option>
-                        <option value="boleto">Boleto Bancário</option>
+                        <option>Cartão de Crédito</option>
+                        <option>Boleto Bancário</option>
                         </select>
                         
                         <div id="box">
@@ -35,12 +35,18 @@
                         
                         <label for="CVV">CVV</label>
                         <input type="text" id="CVV" name="CVV" max="3" placeholder="Código de segurança">
-                        
+
                         <label for="Som">Pacote com Som +R$--</label>
-                        <input type="text" id="Som" name="Som" placeholder="Pacote à parte">
-                        
+                        <select id="Som" name="Som">
+                        <option>Sim</option>
+                        <option>Não</option>
+                        </select>
+
                         <label for="Luz">Pacote com Iluminação +R$--</label>
-                        <input type="text" id="Luz" name="Luz" placeholder="Pacote à parte">
+                        <select id="Luz" name="Luz">
+                        <option>Sim</option>
+                        <option>Não</option>
+                        </select>
                         
                         <div id="bcon">
                             <button type="submit" class="confirmar">Confirmar</button>

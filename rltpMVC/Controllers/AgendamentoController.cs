@@ -139,6 +139,7 @@ namespace rltpMVC.Controllers
 
             if(agendamentoRepositorio.Inserir(agendamento))
             {
+                ViewData["navView"] = "Sucesso";
                 return View("Sucesso", new RespostaViewModel()
                 {
                     NomeView = "Formulario2",
@@ -147,6 +148,7 @@ namespace rltpMVC.Controllers
                 });
 
             } else {
+                ViewData["navView"] = "Erro";
                 return View ("Erro", new RespostaViewModel("Mensagem")
                 {
                     NomeView = "Formulario2",

@@ -32,10 +32,12 @@ namespace rltpMVC.Controllers
                     {
                         case (uint) StatusPedido.APROVADO:
                             dashboardViewModel.PedidosAprovados++;
+                            dashboardViewModel.AgendamentosVistos.Add(pedido);
                         break;
 
                         case (uint) StatusPedido.REPROVADO:
                             dashboardViewModel.PedidosReprovados++;
+                            dashboardViewModel.AgendamentosVistos.Add(pedido);
                         break;
 
                         default:
